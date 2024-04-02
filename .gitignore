@@ -2,5 +2,5 @@ venv/bin/python
 venv/bin/python3
 venv/bin/python3.11
 **/venv/**
-**/**/Fox_Solutions_Account.txt
-**/**/filekey.key
+**/Fox_Solutions_Account.txt
+**/filekey.key
