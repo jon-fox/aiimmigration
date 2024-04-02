@@ -46,6 +46,7 @@ class EventHandler(AssistantEventHandler):
           if output.type == "logs":
             print(f"\n{output.logs}", flush=True)
  
+ 
 # Then, we use the `create_and_stream` SDK helper 
 # with the `EventHandler` class to create the Run 
 # and stream the response.
