@@ -12,6 +12,8 @@ def _assistant_call(question):
     tools=[{"type": "code_interpreter"}],
   #   model="gpt-4-turbo-preview",
     model="gpt-3.5-turbo-0125",
+    # model="US Immigration Law AI",
+    # https://chat.openai.com/g/g-2g79Fgyn6-us-immigration-law-ai
   )
 
   thread = client.beta.threads.create()
@@ -27,7 +29,7 @@ def _assistant_call(question):
 # First, we create a EventHandler class to define
 # how we want to handle the events in the response stream.
  
-class EventHandler(AssistantEventHandler):    
+class EventHandler(AssistantEventHandler):
   @override
   def on_text_created(self, text) -> None:
     print(f"\nassistant > ", end="", flush=True)
