@@ -1,0 +1,49 @@
+https://381492150662.signin.aws.amazon.com/console
+
+root:
+Email:
+jon@foxsolutions.dev
+
+PSWD:
+tKcpi_EBs2RP^gX
+
+Account ID:
+381492150662
+
+-----------------------------------
+https://docs.aws.amazon.com/cli/latest/userguide/sso-configure-profile-token.html
+
+#identity center user
+https://d-9067fc487e.awsapps.com/start
+developer
+KRpjLTb6@KWfKSk
+
+-----------------------------------
+
+iam user
+admin
+bkYxc4]9
+
+-----------------------------------
+
+user: iq-expert 
+pswd: u&TbK~4=y]Y;KHu
+
+iq url
+https://iq.aws.amazon.com/e/foxdevsolutions
+
+
+zoo image generator
+https://zoo.replicate.dev/
+token: r8_8GLPbYMHSQ7PD62jB6OqTxpSiKQBJch3uN6aY
+
+
+https://comptroller.texas.gov/taxes/franchise/questionnaire.php
+texascomptroller
+foxj76543567
+jfkasdj7237472387F#
+
+----------------------------------------------
+
+Chatgpt api test key
+export OPENAI_API_KEY=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
