@@ -10,4 +10,6 @@ sudo -u postgres psql
 alter user postgres with password 'postgres';
 
 https://medium.com/@magda7817/better-together-openai-embeddings-api-with-postgresql-pgvector-extension-7a34645bdac2
+
+https://blog.gopenai.com/rag-with-pg-vector-with-sql-alchemy-d08d96bfa293
 --------------------

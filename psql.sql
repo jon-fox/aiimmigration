@@ -8,6 +8,9 @@ CREATE TABLE conversations (
 -- If using vectors
 CREATE EXTENSION IF NOT EXISTS vector;
 CREATE TABLE conversation_vectors (
-    conversation_id INTEGER REFERENCES conversations(id),
-    vector_data VECTOR(512)  -- Example vector size, adjust based on your actual use case
+    id INTEGER PRIMARY KEY AUTO INCREMENT,
+    content TEXT,
+    vector_data VECTOR(1536)  -- Example vector size, adjust based on your actual use case
 );
+
+-- text-embedding-ada-002 embedding model

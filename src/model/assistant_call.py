@@ -1,6 +1,7 @@
 from openai import OpenAI
 from openai import AssistantEventHandler
 from typing_extensions import override
+from model.conversation_storage import store_conversation
 
 
 client = OpenAI()
@@ -30,26 +31,37 @@ def _assistant_call(question):
 # how we want to handle the events in the response stream.
  
 class EventHandler(AssistantEventHandler):
+  def __init__(self):
+    super().__init__()
+    self.accumulated_output = ""
+
   @override
   def on_text_created(self, text) -> None:
-    print(f"\nassistant > ", end="", flush=True)
-      
+      # Accumulate instead of printing
+      self.accumulated_output += "\nassistant > "
+
   @override
   def on_text_delta(self, delta, snapshot):
-    print(delta.value, end="", flush=True)
-      
+      # Accumulate text changes
+      self.accumulated_output += delta.value
+
   def on_tool_call_created(self, tool_call):
-    print(f"\nassistant > {tool_call.type}\n", flush=True)
-  
+      # Accumulate tool call notifications
+      self.accumulated_output += f"\nassistant > {tool_call.type}\n"
+
   def on_tool_call_delta(self, delta, snapshot):
-    if delta.type == 'code_interpreter':
-      if delta.code_interpreter.input:
-        print(delta.code_interpreter.input, end="", flush=True)
-      if delta.code_interpreter.outputs:
-        print(f"\n\noutput >", flush=True)
-        for output in delta.code_interpreter.outputs:
-          if output.type == "logs":
-            print(f"\n{output.logs}", flush=True)
+      if delta.type == 'code_interpreter':
+          if delta.code_interpreter.input:
+              self.accumulated_output += delta.code_interpreter.input
+          if delta.code_interpreter.outputs:
+              self.accumulated_output += "\n\noutput >"
+              for output in delta.code_interpreter.outputs:
+                  if output.type == "logs":
+                      self.accumulated_output += f"\n{output.logs}"
+
+  def get_accumulated_output(self):
+      # Method to get the accumulated output
+      return self.accumulated_output
  
 
 # Then, we use the `create_and_stream` SDK helper 
@@ -59,11 +71,18 @@ class EventHandler(AssistantEventHandler):
 def gpt_call(name, question):
   thread_id, assistant_id = _assistant_call(question=question)
 
+  handle_event = EventHandler()
+
   with client.beta.threads.runs.create_and_stream(
     thread_id=thread_id,
     assistant_id=assistant_id,
     instructions=f"Please address the user as {name}. The user has a premium account.",
-    event_handler=EventHandler(),
+    event_handler=handle_event,
   ) as stream:
-    stream.until_done() 
+    stream.until_done()
+  
+  # After streaming is done, retrieve the accumulated output
+  full_output = handle_event.get_accumulated_output()
+  store_conversation(question, full_output)
+  print(full_output)  # or return full_output for further processing
 
