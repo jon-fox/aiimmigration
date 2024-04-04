@@ -73,3 +73,13 @@ def store_conversation(user_input, ai_response):
     # conn.commit()
 
     return conversation_id
+
+# def find_similar_embeddings(query_embedding, limit=5):
+#     k = 5
+#     similarity_threshold = 0.7
+#     query = session.query(TextEmbedding, TextEmbedding.embedding.cosine_distance(query_embedding)
+#             .label("distance"))
+#             .filter(TextEmbedding.embedding.cosine_distance(query_embedding) < similarity_threshold)
+#             .order_by("distance")
+#             .limit(k)
+#             .all()
