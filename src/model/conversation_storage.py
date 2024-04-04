@@ -1,39 +1,41 @@
 import psycopg2 as psy
 from psycopg2.extras import execute_values
 import os
+from openai import OpenAI
+from langchain.text_splitter import NLTKTextSplitter
 
 
-def split_text(text, chunk_size=500, overlap=50):
-    chunks = []
-    start = 0
-
-    while start < len(text):
-        end = start + chunk_size
-        if end > len(text):
-            end = len(text)
-        chunks.append(text[start:end])
-        start = end - overlap  # Overlap chunks
-
+def split_text(text):
+    print("Splitting the text with langchain")
+    text_splitter = NLTKTextSplitter()
+    chunks = text_splitter.split_text(text)
     return chunks
 
 # Example usage
 def generate_embeddings(text_chunks):
+    client = OpenAI()
     embeddings = []
+    print(text_chunks)
     for chunk in text_chunks:
-        response = openai.Embedding.create(
+        response = client.embeddings.create(
             input=chunk,
-            model="text-embedding-ada-002"
-        )
-        embeddings.append(response['data'][0]['embedding'])
+            # model="text-embedding-ada-002"
+            model="text-embedding-3-small"
+        ).data[0].embedding
+        embeddings.append(response)
+        # print(response)
     return embeddings
 
 # TODO FIX THIS
 # https://blog.gopenai.com/rag-with-pg-vector-with-sql-alchemy-d08d96bfa293
 def insert_embeddings(embeddings):
+    conn = psy.connect(database="postgres", user="postgres", password=os.getenv('DB_PSWD'), host="localhost", port=5432)
+    cur = conn.cursor()
     for embedding in embeddings:
-        new_embedding = TextEmbedding(embedding=embedding)
-        session.add(new_embedding)
-    session.commit()
+        sql = f"INSERT INTO public.conversation_vectors (vector_data) VALUES ('{embedding}')"
+        cur.execute(sql)
+    conn.commit()
+    conn.close()
 
 # N_DIM = 1536
 
@@ -52,6 +54,16 @@ def store_conversation(user_input, ai_response):
                    (user_input, ai_response))
     conversation_id = cursor.fetchone()[0]
     conn.commit()
+
+    print("Conversation stored in postgres db conversations table")
+    print("Storing conversations into vector table")
+    chunks = split_text(text=ai_response)
+    print("Finished Splitting into chunks for embeddings")
+    embeddings = generate_embeddings(text_chunks=chunks)
+    print("Embeddings creation completed")
+    print("Inserting embeddings into vector db")
+    insert_embeddings(embeddings=embeddings)
+    print("Embeddings insertion completed")
     
     # Example: Generating and storing a vector (optional and hypothetical)
     # Let's assume you have a function to convert texts to vectors: text_to_vector(text)

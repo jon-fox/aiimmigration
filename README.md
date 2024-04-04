@@ -13,3 +13,10 @@ https://medium.com/@magda7817/better-together-openai-embeddings-api-with-postgre
 
 https://blog.gopenai.com/rag-with-pg-vector-with-sql-alchemy-d08d96bfa293
 --------------------
+pip install langchain
+
+for error with punkt
+
+python -m nltk.downloader punkt
+
+--------------------
