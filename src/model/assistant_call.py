@@ -85,4 +85,3 @@ def gpt_call(name, question):
   full_output = handle_event.get_accumulated_output()
   store_conversation(question, full_output)
   print(full_output)  # or return full_output for further processing
-

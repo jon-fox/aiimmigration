@@ -32,7 +32,7 @@ def insert_embeddings(embeddings):
     conn = psy.connect(database="postgres", user="postgres", password=os.getenv('DB_PSWD'), host="localhost", port=5432)
     cur = conn.cursor()
     for embedding in embeddings:
-        sql = f"INSERT INTO public.conversation_vectors (vector_data) VALUES ('{embedding}')"
+        sql = f"INSERT INTO conversations.conversation_vectors (vector_data) VALUES ('{embedding}')"
         cur.execute(sql)
     conn.commit()
     conn.close()
@@ -50,7 +50,7 @@ def store_conversation(user_input, ai_response):
     conn = psy.connect(database="postgres", user="postgres", password=os.getenv('DB_PSWD'), host="localhost", port=5432)
     cursor = conn.cursor()
     # Insert into the conversations table
-    cursor.execute("INSERT INTO conversations (user_input, ai_response) VALUES (%s, %s) RETURNING id;",
+    cursor.execute("INSERT INTO conversations.conversations (user_input, ai_response) VALUES (%s, %s) RETURNING id;",
                    (user_input, ai_response))
     conversation_id = cursor.fetchone()[0]
     conn.commit()
