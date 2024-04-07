@@ -3,3 +3,4 @@ cryptography
 pgvector
 psycopg2-binary
 langchain
+PyMuPDF
