@@ -59,16 +59,12 @@ class Person:
     def current_marital_status(self):
         return self._current_marital_status
 
-    @property
-    def employment_history(self):
-        return self._employment_history
-
 # Example usage:
-mailing_address = Address("123 Main St", "Anytown", "CA", "90210", "USA")
-person = Person("Alice", "Smith", "01/01/1980", "USA", mailing_address, "Married")
+# mailing_address = Address("123 Main St", "Anytown", "CA", "90210", "USA")
+# person = Person("Alice", "Smith", "01/01/1980", "USA", mailing_address, "Married")
 
-print(f"Name: {person.first_name} {person.last_name}")
-print(f"Date of Birth: {person.date_of_birth}")
-print(f"Country of Birth: {person.country_of_birth}")
-print(f"Mailing Address: {person.mailing_address.street_number_and_name}, {person.mailing_address.city_or_town}, {person.mailing_address.state}, {person.mailing_address.zip_code}, {person.mailing_address.country}")
-print(f"Current Marital Status: {person.current_marital_status}")
+# print(f"Name: {person.first_name} {person.last_name}")
+# print(f"Date of Birth: {person.date_of_birth}")
+# print(f"Country of Birth: {person.country_of_birth}")
+# print(f"Mailing Address: {person.mailing_address.street_number_and_name}, {person.mailing_address.city_or_town}, {person.mailing_address.state}, {person.mailing_address.zip_code}, {person.mailing_address.country}")
+# print(f"Current Marital Status: {person.current_marital_status}")
