@@ -36,3 +36,6 @@ python -m nltk.downloader punkt
 python main.py --name "me" --question "blah"
 
 <--------------------->
+notepad wsl alias
+alias npp="/mnt/c/Program\ Files/Notepad++/Notepad++.exe"
+<--------------------->
