@@ -12,14 +12,17 @@ def read_pdf(file_path):
                 # print(f"Field Name: {field['name']}, Field Type: {field['type']}")
                 # Extract text from the current page
                 # print(widget.field_name)
-                print(widget.field_name.split('.')[-1].split('_')[-1][:-3] + " | " + widget.field_label)
+                # print(widget.field_name.split('.')[-1].split('_')[-1][:-3] + " | " + widget.field_label)
                 # print(widget.field_label)
-                # print(widget.field_value)
+                field_name = widget.field_name.split('.')[-1].split('_')[-1][:-3]
+                print(field_name + " | " + widget.field_label + " | " + widget.field_value + " | eol")
                 # print(widget.xref)
                 # print(dir(widget))
-                if widget.field_name == 'Field I am looking for':
-                    widget.field_value = 'My new value'
+                if field_name == 'SSN':
+                    widget.field_value = '123456789'
                     widget.update()
+                    print(field_name + " | " + widget.field_label + " | " + widget.field_value + " | eol")
+                    break
                 # field_name = annot.info["title"]
                 # print(field_name)
                 # if field_name in form_data:
@@ -29,6 +32,7 @@ def read_pdf(file_path):
                 #     field_value = f"We're testing here"  # The text you want to enter
                 #     doc[field['name']] = field_value
     # return text
+        doc.save("../../documents/i-130-test.pdf", incremental=False, encryption=fitz.PDF_ENCRYPT_KEEP)
 
 # Specify the path to your PDF file
 file_path = "../../documents/i-130.pdf"
