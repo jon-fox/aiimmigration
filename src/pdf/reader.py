@@ -1,6 +1,7 @@
 import fitz  # PyMuPDF dependency
+from data_objects.person import Person
 
-def read_pdf(file_path):
+def fill_pdf(file_path, person):
     # open pdf file
     with fitz.open(file_path) as doc:
         # text = ""
@@ -23,6 +24,9 @@ def read_pdf(file_path):
                     widget.update()
                     print(field_name + " | " + widget.field_label + " | " + widget.field_value + " | eol")
                     break
+
+                if field_name == person.get_closest_method_name(field_name):
+                    print("Match with field name " + field_name)
                 # field_name = annot.info["title"]
                 # print(field_name)
                 # if field_name in form_data:
@@ -32,9 +36,10 @@ def read_pdf(file_path):
                 #     field_value = f"We're testing here"  # The text you want to enter
                 #     doc[field['name']] = field_value
     # return text
-        doc.save("../../documents/i-130-test.pdf", incremental=False, encryption=fitz.PDF_ENCRYPT_KEEP)
+        doc.save("../documents/i-130-test.pdf", incremental=False, encryption=fitz.PDF_ENCRYPT_KEEP)
 
 # Specify the path to your PDF file
-file_path = "../../documents/i-130.pdf"
-text = read_pdf(file_path)
+file_path = "../documents/i-130.pdf"
+person = Person('test','test','test','test')
+text = fill_pdf(file_path, person)
 print(text)

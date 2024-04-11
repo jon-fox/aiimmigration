@@ -1,19 +1,129 @@
-from data_objects.address import Address
-from data_objects.employment import Employment
+from fuzzywuzzy import process
 
-class Person:
-    def __init__(self, first_name, last_name, a_number=None, ssn=None, date_of_birth=None, country_of_birth=None, mailing_address=None, physical_addresses=None, current_marital_status=None, employment_history=None, parents=None):
+class Address():
+    def __init__(self, street_number_and_name, city_or_town, state, zip_code, country, physical_addresses, mailing_address):
+        self._street_number_and_name = street_number_and_name
+        self._city_or_town = city_or_town
+        self._state = state
+        self._zip_code = zip_code
+        self._country = country
+        self._physical_addresses = physical_addresses if physical_addresses is not None else []  # List of Address instances
+        self._mailing_address = mailing_address
+
+    @property
+    def street_number_and_name(self):
+        return self._street_number_and_name
+
+    @street_number_and_name.setter
+    def street_number_and_name(self, value):
+        # Add validation or processing logic here if needed
+        self._street_number_and_name = value
+
+    @property
+    def city_or_town(self):
+        return self._city_or_town
+
+    @city_or_town.setter
+    def city_or_town(self, value):
+        self._city_or_town = value
+
+    @property
+    def state(self):
+        return self._state
+
+    @state.setter
+    def state(self, value):
+        self._state = value
+
+    @property
+    def zip_code(self):
+        return self._zip_code
+
+    @zip_code.setter
+    def zip_code(self, value):
+        self._zip_code = value
+
+    @property
+    def country(self):
+        return self._country
+
+    @country.setter
+    def country(self, value):
+        self._country = value
+
+    @property
+    def mailing_address(self):
+        return self._mailing_address
+    
+    @property
+    def physical_addresses(self):
+        return self._physical_addresses
+
+class Employment():
+    def __init__(self, employer_name, job_title, start_date, city_or_town, country, employment_history):
+        self._employer_name = employer_name
+        self._job_title = job_title
+        self._start_date = start_date
+        self._city_or_town = city_or_town
+        self._country = country
+        self._employment_history = employment_history if employment_history is not None else []
+
+    @property
+    def employer_name(self) -> str:
+        return self._employer_name
+
+    @employer_name.setter
+    def employer_name(self, value: str) -> None:
+        self._employer_name = value
+
+    @property
+    def job_title(self) -> str:
+        return self._job_title
+
+    @job_title.setter
+    def job_title(self, value: str) -> None:
+        self._job_title = value
+
+    @property
+    def start_date(self) -> str:
+        return self._start_date
+
+    @start_date.setter
+    def start_date(self, value: str) -> None:
+        self._start_date = value
+
+    @property
+    def city_or_town(self) -> str:
+        return self._city_or_town
+
+    @city_or_town.setter
+    def city_or_town(self, value: str) -> None:
+        self._city_or_town = value
+
+    @property
+    def country(self) -> str:
+        return self._country
+
+    @country.setter
+    def country(self, value: str) -> None:
+        self._country = value
+    
+    @property
+    def employment_history(self):
+        return self._employment_history
+
+class Person():
+    def __init__(self, employment, address, first_name, last_name, a_number=None, ssn=None, date_of_birth=None, country_of_birth=None, mailing_address=None, physical_addresses=None, current_marital_status=None, employment_history=None, parents=None):
         self._first_name = first_name
         self._last_name = last_name
+        self.employment = employment # instance of employment class
+        self.address = address # instance of address class
         self._date_of_birth = date_of_birth
         self._country_of_birth = country_of_birth
-        self._mailing_address = mailing_address  # This will be an instance of the Address class
         self._current_marital_status = current_marital_status
         self._ssn = ssn
         self._a_number = a_number
-        self._physical_addresses = physical_addresses if physical_addresses is not None else []  # List of Address instances
         self._parents = parents if parents is not None else []
-        self._employment_history = employment_history if employment_history is not None else []
 
     @property
     def ssn(self):
@@ -24,16 +134,8 @@ class Person:
         return self._a_number
     
     @property
-    def physical_addresses(self):
-        return self._physical_addresses
-    
-    @property
     def parents(self):
         return self._parents
-    
-    @property
-    def employment_history(self):
-        return self._employment_history
 
     @property
     def first_name(self):
@@ -52,19 +154,27 @@ class Person:
         return self._country_of_birth
 
     @property
-    def mailing_address(self):
-        return self._mailing_address
-
-    @property
     def current_marital_status(self):
         return self._current_marital_status
+    
+    def get_closest_method_name(self, query: str) -> str:
+        # Include methods and properties in the list
+        attributes = [attr for attr in dir(self) if not attr.startswith("__")]
+        # Filter to include callables and property instances
+        filtered_attributes = []
+        for attr in attributes:
+            if callable(getattr(self, attr)):
+                filtered_attributes.append(attr)
+            else:
+                # Check if the attribute is a property
+                prop = getattr(type(self), attr, None)
+                if isinstance(prop, property):
+                    filtered_attributes.append(attr)
 
-# Example usage:
-# mailing_address = Address("123 Main St", "Anytown", "CA", "90210", "USA")
-# person = Person("Alice", "Smith", "01/01/1980", "USA", mailing_address, "Married")
-
-# print(f"Name: {person.first_name} {person.last_name}")
-# print(f"Date of Birth: {person.date_of_birth}")
-# print(f"Country of Birth: {person.country_of_birth}")
-# print(f"Mailing Address: {person.mailing_address.street_number_and_name}, {person.mailing_address.city_or_town}, {person.mailing_address.state}, {person.mailing_address.zip_code}, {person.mailing_address.country}")
-# print(f"Current Marital Status: {person.current_marital_status}")
+        closest_match, score = process.extractOne(query, filtered_attributes)
+        print("Getting Closest Match " + " | " + str(filtered_attributes))
+        if score > 80:  # This threshold can be adjusted
+            print("PRETTY CLOSE MATCH " + closest_match)
+            return closest_match
+        else:
+            return None
