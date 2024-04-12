@@ -4,4 +4,4 @@ pgvector
 psycopg2-binary
 langchain
 PyMuPDF
-fuzzywuzzy
+thefuzz

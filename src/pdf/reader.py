@@ -1,5 +1,6 @@
 import fitz  # PyMuPDF dependency
-from data_objects.person import Person
+from data_objects.person import get_closest_method_name
+from data_objects.person import setup_person
 
 def fill_pdf(file_path, person):
     # open pdf file
@@ -16,16 +17,17 @@ def fill_pdf(file_path, person):
                 # print(widget.field_name.split('.')[-1].split('_')[-1][:-3] + " | " + widget.field_label)
                 # print(widget.field_label)
                 field_name = widget.field_name.split('.')[-1].split('_')[-1][:-3]
-                print(field_name + " | " + widget.field_label + " | " + widget.field_value + " | eol")
+                # print(field_name + " | " + widget.field_label + " | " + widget.field_value + " | eol")
                 # print(widget.xref)
                 # print(dir(widget))
-                if field_name == 'SSN':
-                    widget.field_value = '123456789'
-                    widget.update()
-                    print(field_name + " | " + widget.field_label + " | " + widget.field_value + " | eol")
-                    break
+                # if field_name == 'SSN':
+                #     widget.field_value = '123456789'
+                #     widget.update()
+                #     print(field_name + " | " + widget.field_label + " | " + widget.field_value + " | eol")
+                #     break
 
-                if field_name == person.get_closest_method_name(field_name):
+                # print("Field name " + field_name)
+                if field_name == get_closest_method_name(person, field_name):
                     print("Match with field name " + field_name)
                 # field_name = annot.info["title"]
                 # print(field_name)
@@ -40,6 +42,7 @@ def fill_pdf(file_path, person):
 
 # Specify the path to your PDF file
 file_path = "../documents/i-130.pdf"
-person = Person('test','test','test','test')
-text = fill_pdf(file_path, person)
-print(text)
+new_person = setup_person()
+print(f"Created person: {new_person.first_name} {new_person.last_name}")
+text = fill_pdf(file_path, new_person)
+# print(text)
