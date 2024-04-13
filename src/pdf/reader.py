@@ -11,33 +11,18 @@ def fill_pdf(file_path, person):
             # print(page.get_text())
             widgets = page.widgets()
             for widget in widgets:
-                # print(f"Field Name: {field['name']}, Field Type: {field['type']}")
-                # Extract text from the current page
-                # print(widget.field_name)
-                # print(widget.field_name.split('.')[-1].split('_')[-1][:-3] + " | " + widget.field_label)
                 # print(widget.field_label)
                 field_name = widget.field_name.split('.')[-1].split('_')[-1][:-3]
                 # print(field_name + " | " + widget.field_label + " | " + widget.field_value + " | eol")
-                # print(widget.xref)
-                # print(dir(widget))
-                # if field_name == 'SSN':
-                #     widget.field_value = '123456789'
-                #     widget.update()
-                #     print(field_name + " | " + widget.field_label + " | " + widget.field_value + " | eol")
-                #     break
-
-                # print("Field name " + field_name)
-                if field_name == get_closest_method_name(person, field_name):
-                    print("Match with field name " + field_name)
-                # field_name = annot.info["title"]
-                # print(field_name)
-                # if field_name in form_data:
-                #     annot.set_text(form_data[field_name])
-                # if field['type'] == 'text':
-                #     # Fill in the field
-                #     field_value = f"We're testing here"  # The text you want to enter
-                #     doc[field['name']] = field_value
-    # return text
+                
+                closest_match = get_closest_method_name(person, field_name)
+                if closest_match:
+                    # method_to_call = getattr(person, closest_match, None)
+                    print("Attribute Found " + str(closest_match))
+                    attribute_value = getattr(person, closest_match, None)
+                    # Check if the retrieved attribute is callable and call it
+                    widget.field_value = attribute_value
+                    widget.update()  # Assuming this function commits the changes to the widget
         doc.save("../documents/i-130-test.pdf", incremental=False, encryption=fitz.PDF_ENCRYPT_KEEP)
 
 # Specify the path to your PDF file

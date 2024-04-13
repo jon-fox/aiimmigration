@@ -191,19 +191,6 @@ def get_all_properties(obj, parent_prefix=""):
     return properties
 
 def get_closest_method_name(obj, query: str) -> str:
-    # Include methods and properties in the list
-    # attributes = [attr for attr in dir(obj) if not attr.startswith("__")]
-    # # Filter to include callables and property instances
-    # filtered_attributes = []
-    # for attr in attributes:
-    #     if callable(getattr(obj, attr)):
-    #         filtered_attributes.append(attr)
-    #     else:
-    #         print(f"Attribute {attr}")
-    #         # Check if the attribute is a property
-    #         prop = getattr(type(obj), attr, None)
-    #         if isinstance(prop, property):
-    #             filtered_attributes.append(attr)
     properties = get_all_properties(obj)
     property_names = list(properties.keys())
     # print(f'Properties {property_names}')
