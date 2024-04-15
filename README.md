@@ -39,3 +39,4 @@ python main.py --name "me" --question "blah"
 notepad wsl alias
 alias npp="/mnt/c/Program\ Files/Notepad++/Notepad++.exe"
 <--------------------->
+src/util includes a property generator taken from a txt extract of pdf
