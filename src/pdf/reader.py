@@ -14,11 +14,12 @@ def fill_pdf(file_path, person):
                 # print(widget.field_label)
                 field_name = widget.field_name.split('.')[-1].split('_')[-1][:-3]
                 # print(field_name + " | " + widget.field_label + " | " + widget.field_value + " | eol")
+                print(field_name + " | ")
                 
                 closest_match = get_closest_method_name(person, field_name)
                 if closest_match:
                     # method_to_call = getattr(person, closest_match, None)
-                    print("Attribute Found " + str(closest_match))
+                    # print("Attribute Found " + str(closest_match))
                     attribute_value = getattr(person, closest_match, None)
                     # Check if the retrieved attribute is callable and call it
                     widget.field_value = attribute_value
