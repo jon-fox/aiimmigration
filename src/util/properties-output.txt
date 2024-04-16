@@ -1,42 +1,10 @@
 @property
-def PDF417BarCode1(self):
-    return self._PDF417BarCode1
-
-@PDF417BarCode1.setter
-def PDF417BarCode1(self, value):
-    self._PDF417BarCode1 = value
-
-@property
 def SSN(self):
     return self._SSN
 
 @SSN.setter
 def SSN(self, value):
     self._SSN = value
-
-@property
-def CheckBox1(self):
-    return self._CheckBox1
-
-@CheckBox1.setter
-def CheckBox1(self, value):
-    self._CheckBox1 = value
-
-@property
-def VolagNumber(self):
-    return self._VolagNumber
-
-@VolagNumber.setter
-def VolagNumber(self, value):
-    self._VolagNumber = value
-
-@property
-def AttorneyStateBarNumber(self):
-    return self._AttorneyStateBarNumber
-
-@AttorneyStateBarNumber.setter
-def AttorneyStateBarNumber(self, value):
-    self._AttorneyStateBarNumber = value
 
 @property
 def USCISOnlineAcctNumber(self):
@@ -111,38 +79,6 @@ def OutOfWedlock(self, value):
     self._OutOfWedlock = value
 
 @property
-def Yes(self):
-    return self._Yes
-
-@Yes.setter
-def Yes(self, value):
-    self._Yes = value
-
-@property
-def No(self):
-    return self._No
-
-@No.setter
-def No(self, value):
-    self._No = value
-
-@property
-def Yes(self):
-    return self._Yes
-
-@Yes.setter
-def Yes(self, value):
-    self._Yes = value
-
-@property
-def No(self):
-    return self._No
-
-@No.setter
-def No(self, value):
-    self._No = value
-
-@property
 def FamilyName(self):
     return self._FamilyName
 
@@ -173,22 +109,6 @@ def AlienNumber(self):
 @AlienNumber.setter
 def AlienNumber(self, value):
     self._AlienNumber = value
-
-@property
-def USCISOnlineActNumber(self):
-    return self._USCISOnlineActNumber
-
-@USCISOnlineActNumber.setter
-def USCISOnlineActNumber(self, value):
-    self._USCISOnlineActNumber = value
-
-@property
-def PDF417BarCode1(self):
-    return self._PDF417BarCode1
-
-@PDF417BarCode1.setter
-def PDF417BarCode1(self, value):
-    self._PDF417BarCode1 = value
 
 @property
 def DateofBirth(self):
@@ -223,44 +143,12 @@ def CountryofBirth(self, value):
     self._CountryofBirth = value
 
 @property
-def Yes(self):
-    return self._Yes
-
-@Yes.setter
-def Yes(self, value):
-    self._Yes = value
-
-@property
-def No(self):
-    return self._No
-
-@No.setter
-def No(self, value):
-    self._No = value
-
-@property
 def StreetNumberName(self):
     return self._StreetNumberName
 
 @StreetNumberName.setter
 def StreetNumberName(self, value):
     self._StreetNumberName = value
-
-@property
-def Unit(self):
-    return self._Unit
-
-@Unit.setter
-def Unit(self, value):
-    self._Unit = value
-
-@property
-def Unit(self):
-    return self._Unit
-
-@Unit.setter
-def Unit(self, value):
-    self._Unit = value
 
 @property
 def Unit(self):
@@ -335,86 +223,6 @@ def InCareofName(self, value):
     self._InCareofName = value
 
 @property
-def StreetNumberName(self):
-    return self._StreetNumberName
-
-@StreetNumberName.setter
-def StreetNumberName(self, value):
-    self._StreetNumberName = value
-
-@property
-def Unit(self):
-    return self._Unit
-
-@Unit.setter
-def Unit(self, value):
-    self._Unit = value
-
-@property
-def Unit(self):
-    return self._Unit
-
-@Unit.setter
-def Unit(self, value):
-    self._Unit = value
-
-@property
-def Unit(self):
-    return self._Unit
-
-@Unit.setter
-def Unit(self, value):
-    self._Unit = value
-
-@property
-def AptSteFlrNumber(self):
-    return self._AptSteFlrNumber
-
-@AptSteFlrNumber.setter
-def AptSteFlrNumber(self, value):
-    self._AptSteFlrNumber = value
-
-@property
-def CityOrTown(self):
-    return self._CityOrTown
-
-@CityOrTown.setter
-def CityOrTown(self, value):
-    self._CityOrTown = value
-
-@property
-def State(self):
-    return self._State
-
-@State.setter
-def State(self, value):
-    self._State = value
-
-@property
-def ZipCode(self):
-    return self._ZipCode
-
-@ZipCode.setter
-def ZipCode(self, value):
-    self._ZipCode = value
-
-@property
-def Province(self):
-    return self._Province
-
-@Province.setter
-def Province(self, value):
-    self._Province = value
-
-@property
-def Country(self):
-    return self._Country
-
-@Country.setter
-def Country(self, value):
-    self._Country = value
-
-@property
 def PostalCode(self):
     return self._PostalCode
 
@@ -429,142 +237,6 @@ def DateFrom(self):
 @DateFrom.setter
 def DateFrom(self, value):
     self._DateFrom = value
-
-@property
-def DateFrom(self):
-    return self._DateFrom
-
-@DateFrom.setter
-def DateFrom(self, value):
-    self._DateFrom = value
-
-@property
-def DateTo(self):
-    return self._DateTo
-
-@DateTo.setter
-def DateTo(self, value):
-    self._DateTo = value
-
-@property
-def StreetNumberName(self):
-    return self._StreetNumberName
-
-@StreetNumberName.setter
-def StreetNumberName(self, value):
-    self._StreetNumberName = value
-
-@property
-def Unit(self):
-    return self._Unit
-
-@Unit.setter
-def Unit(self, value):
-    self._Unit = value
-
-@property
-def Unit(self):
-    return self._Unit
-
-@Unit.setter
-def Unit(self, value):
-    self._Unit = value
-
-@property
-def Unit(self):
-    return self._Unit
-
-@Unit.setter
-def Unit(self, value):
-    self._Unit = value
-
-@property
-def AptSteFlrNumber(self):
-    return self._AptSteFlrNumber
-
-@AptSteFlrNumber.setter
-def AptSteFlrNumber(self, value):
-    self._AptSteFlrNumber = value
-
-@property
-def CityOrTown(self):
-    return self._CityOrTown
-
-@CityOrTown.setter
-def CityOrTown(self, value):
-    self._CityOrTown = value
-
-@property
-def State(self):
-    return self._State
-
-@State.setter
-def State(self, value):
-    self._State = value
-
-@property
-def ZipCode(self):
-    return self._ZipCode
-
-@ZipCode.setter
-def ZipCode(self, value):
-    self._ZipCode = value
-
-@property
-def Province(self):
-    return self._Province
-
-@Province.setter
-def Province(self, value):
-    self._Province = value
-
-@property
-def Country(self):
-    return self._Country
-
-@Country.setter
-def Country(self, value):
-    self._Country = value
-
-@property
-def PostalCode(self):
-    return self._PostalCode
-
-@PostalCode.setter
-def PostalCode(self, value):
-    self._PostalCode = value
-
-@property
-def CityTownOfBirth(self):
-    return self._CityTownOfBirth
-
-@CityTownOfBirth.setter
-def CityTownOfBirth(self, value):
-    self._CityTownOfBirth = value
-
-@property
-def FamilyName(self):
-    return self._FamilyName
-
-@FamilyName.setter
-def FamilyName(self, value):
-    self._FamilyName = value
-
-@property
-def GivenName(self):
-    return self._GivenName
-
-@GivenName.setter
-def GivenName(self, value):
-    self._GivenName = value
-
-@property
-def MiddleName(self):
-    return self._MiddleName
-
-@MiddleName.setter
-def MiddleName(self, value):
-    self._MiddleName = value
 
 @property
 def NumberofMarriages(self):
@@ -621,38 +293,6 @@ def Divorced(self):
 @Divorced.setter
 def Divorced(self, value):
     self._Divorced = value
-
-@property
-def DateTo(self):
-    return self._DateTo
-
-@DateTo.setter
-def DateTo(self, value):
-    self._DateTo = value
-
-@property
-def PDF417BarCode1(self):
-    return self._PDF417BarCode1
-
-@PDF417BarCode1.setter
-def PDF417BarCode1(self, value):
-    self._PDF417BarCode1 = value
-
-@property
-def FamilyName(self):
-    return self._FamilyName
-
-@FamilyName.setter
-def FamilyName(self, value):
-    self._FamilyName = value
-
-@property
-def GivenName(self):
-    return self._GivenName
-
-@GivenName.setter
-def GivenName(self, value):
-    self._GivenName = value
 
 @property
 def MiddleName(self):

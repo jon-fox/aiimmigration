@@ -1,0 +1,38 @@
+part_1:
+  relationship:
+    1.filing_for:
+      options: 
+        - Spouse
+        - Parent
+        - Brother/Sister
+        - Child
+    2.if_child_or_parent:
+      - child_married_parents
+      - stepchild/stepparent
+      - child_unmarried_parents
+      - child_adopted
+    3.related_by_adoption:
+      - yes
+      - no
+    4.citizenship_through_adoption:
+      - yes
+      - no
+
+part_2:
+  - 1.alien_registration_number
+  - 2.uscis_account_number
+  - 3.ssn
+  - 4.a.last_name
+  - 4.b.first_name
+  - 4.c.middle_name
+  - 5.a.last_name
+  - 5.b.first_name
+  - 5.c.middle_name
+  - 6.city_town_village_of_birth
+  - 7.country_of_birth
+  - 8.dob_mm_dd_yyyy
+  - 9.sex
+  mailing_address:
+    - in_care_of_name
+    - 
+  
