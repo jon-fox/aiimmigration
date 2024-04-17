@@ -32,7 +32,255 @@ part_2:
   - 7.country_of_birth
   - 8.dob_mm_dd_yyyy
   - 9.sex
-  mailing_address:
-    - in_care_of_name
-    - 
+  - 10.a.in_care_of_name
+  - 10.b.street_number_and_name
+  - 10.c.apt_ste_flr
+  - 10.d.city_or_town
+  - 10.e.state
+  - 10.f.zipcode
+  - 10.g.province
+  - 10.h.postalcode
+  - 10.i.country
+  - 11.mailing_and_physical_same
+  - 12.a.street_number_and_name
+  - 12.b.apt_ste_flr
+  - 12.c.city_or_town
+  - 12.d.state
+  - 12.e.zipcode
+  - 12.f.province
+  - 12.g.postalcode
+  - 12.h.country
+  - 13.a.date_from
+  - 13.b.date_to
+  - 14.a.street_number_and_name
+  - 14.b.apt_ste_flr
+  - 14.c.city_or_town
+  - 14.d.state
+  - 14.e.zipcode
+  - 14.f.province
+  - 14.g.postalcode
+  - 14.h.country
+  - 15.a.date_from
+  - 15.b.date_to
+  - 16.num_times_married
+  - 17.marital_status
+  - 18.marital_status
+  - 19.a.marital_status
+  - 19.b.marital_status
+  - 19.c.marital_status
+  - 19.d.marital_status
+  - 20.a.marital_status
+  - 20.b.marital_status
+  - 20.c.marital_status
+  - 21.marital_status
+  - 22.a.marital_status
+  - 22.b.marital_status
+  - 22.c.marital_status
+  - 23.marital_status
+  - 24.a.marital_status
+  - 24.b.marital_status
+  - 24.c.marital_status
+  - 25.marital_status
+  - 26.marital_status
+  - 27.marital_status
+  - 28.marital_status
+  - 29.marital_status
+  - 30.a.marital_status
+  - 30.b.marital_status
+  - 30.c.marital_status
+  - 31.marital_status
+  - 32.marital_status
+  - 33.marital_status
+  - 34.marital_status
+  - 35.marital_status
+  - 36.marital_status
+  - 37.marital_status
+  - 38.marital_status
+  - 39.a.marital_status
+  - 39.b.marital_status
+  - 39.c.marital_status
+  - 40.a.marital_status
+  - 40.b.marital_status
+  - 40.c.marital_status
+  - 40.d.marital_status
+  - 41.marital_status
+  - 42.marital_status
+  - 43.a.marital_status
+  - 43.b.marital_status
+  - 43.c.marital_status
+  - 43.d.marital_status
+  - 43.f.marital_status
+  - 43.g.marital_status
+  - 43.h.marital_status
+  - 44.marital_status
+  - 45.a.marital_status
+  - 45.b.marital_status
+  - 46.marital_status
+  - 47.a.marital_status
+  - 47.b.marital_status
+  - 47.c.marital_status
+  - 47.d.marital_status
+  - 47.e.marital_status
+  - 47.f.marital_status
+  - 47.g.marital_status
+  - 47.h.marital_status
+  - 48.marital_status
+  - 49.a.marital_status
+  - 49.b.marital_status
+part_3:
+  - 1.ethnicity
+  - 2.race
+  - 3.height
+  - 4.weight
+  - 5.eye_color
+  - 6.hair_color
+part_4:
+  - 1.alien_registration_number
+  - 2.uscis_account_number
+  - 3.ssn
+  - 4.a.last_name
+  - 4.b.first_name
+  - 4.c.middle_name
+  - 5.a.last_name
+  - 5.b.first_name
+  - 5.c.middle_name
+  - 6.city_town_village_of_birth
+  - 7.country_of_birth
+  - 8.dob_mm_dd_yyyy
+  - 9.sex
+  - 10.has_anyone_filed_a_petition_for_you
+  - 11.a.street_number_and_name
+  - 11.b.apt_ste_flr
+  - 11.c.city_or_town
+  - 11.d.state
+  - 11.e.zipcode
+  - 11.f.province
+  - 11.g.postalcode
+  - 11.h.country
+  - 12.a.street_number_and_name
+  - 12.b.apt_ste_flr
+  - 12.c.city_or_town
+  - 12.d.state
+  - 12.e.zipcode
+  - 13.a.street_number_and_name
+  - 13.b.apt_ste_flr
+  - 13.c.city_or_town
+  - 13.e.postalcode
+  - 13.d.province
+  - 13.e.postalcode
+  - 13.f.country
+  - 14.daytime_telephone_number
+  - 15.mobile_telephone_number
+  - 16.email_address
+  - 17.number_of_times_married
+  - 18.marital_status
+  - 19.date_of_current_marriage
+  - 20.a.city_or_town
+  - 20.b.state
+  - 20.c.province
+  - 20.d.country
+  - 21.a.last_name
+  - 21.b.first_name
+  - 21.c.middle_name
+  - 22.date_marriage_ended
+  - 23.a.last_name
+  - 23.b.first_name
+  - 23.c.middle_name
+  - 24.date_marriage_ended
+  - 25.a.last_name
+  - 25.b.first_name
+  - 25.c.middle_name
+  - 26.relationship
+  - 27.dob
+  - 28.country_of_birth
+  - 29.a.last_name
+  - 29.b.first_name
+  - 29.c.middle_name
+  - 30.relationship
+  - 31.dob
+  - 32.country_of_birth
+  - 33.a.last_name
+  - 33.b.first_name
+  - 33.c.middle_name
+  - 34.relationship
+  - 35.dob
+  - 36.country_of_birth
+  - 37.a.last_name
+  - 37.b.first_name
+  - 37.c.middle_name
+  - 38.relationship
+  - 39.dob
+  - 40.country_of_birth
+  - 41.a.last_name
+  - 41.b.first_name
+  - 41.c.middle_name
+  - 42.relationship
+  - 43.dob
+  - 44.country_of_birth
+  - 45.ever_in_the_united_states
+  - 46.a.class_of_admission
+  - 46.b.i_94_record_number
+  - 46.c.date_of_arrival
+  - 46.d.date_of_expiry
+  - 47.passport_number
+  - 48.travel_document_number
+  - 49.country_of_passport_issuance
+  - 50.passport_or_travel_doc_expiration
+  - 51.a.current_employer
+  - 51.b.street_number_and_name
+  - 51.c.apt_ste_flr
+  - 51.d.city_or_town
+  - 51.e.state
+  - 51.f.zipcode
+  - 51.g.province
+  - 51.h.postalcode
+  - 51.i.country
+  - 52.date_employment_began
+  - 53.ever_in_immigration_proceedings
+  - 54.type_of_proceedings
+  - 55.a.city_or_town
+  - 55.b.state
+  - 56.date
+  - 57.a.last_name
+  - 57.b.first_name
+  - 57.c.middle_name
+  - 58.a.street_number_and_name
+  - 58.b.apt_ste_flr
+  - 58.c.city_or_town
+  - 58.d.province
+  - 58.e.postalcode
+  - 58.f.country
+  - 59.a.street_number_and_name
+  - 59.b.apt_ste_flr
+  - 59.c.city_or_town
+  - 59.d.state
+  - 59.e.zipcode
+  - 59.f.province
+  - 59.h.country
+  - 60.a.date_from
+  - 60.b.date_to
+  - 61.a.city_or_town
+  - 61.b.state
+  - 62.a.city_or_town
+  - 62.b.province
+  - 62.c.country
+part_5:
+  - 1.previously_filed
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
   
