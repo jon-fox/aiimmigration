@@ -6,3 +6,4 @@ langchain
 PyMuPDF
 thefuzz
 PyYAML
+streamlit

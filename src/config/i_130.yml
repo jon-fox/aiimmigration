@@ -266,21 +266,87 @@ part_4:
   - 62.c.country
 part_5:
   - 1.previously_filed
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-  
+  - 2.a.last_name
+  - 2.b.first_name
+  - 2.c.middle_name
+  - 3.a.city_or_town
+  - 3.b.state
+  - 4.date_filed
+  - 5.result
+  - 6.a.last_name
+  - 6.b.first_name
+  - 6.c.middle_name
+  - 7.relationship
+  - 8.a.last_name
+  - 8.b.first_name
+  - 8.c.middle_name
+  - 9.relationship
+part_6:
+  - 1.a.understand_english
+  - 1.b.language_if_not_english
+  - 2.preparer_in_part_8
+  - 3.petitioner_day_telephone
+  - 4.petitioner_mbile_telephone
+  - 5.petitioner_email_address
+  - 6.a.petitioner_sign_in_ink
+  - 6.b.date_of_signature
+part_7:
+  - 1.a.interpreter_last_name
+  - 1.b.interpreter_first_name
+  - 2.interpreter_business_or_org_name
+  - 3.a.street_number_and_name
+  - 3.b.apt_ste_flr
+  - 3.c.city_or_town
+  - 3.d.state
+  - 3.e.zipcode
+  - 3.f.province
+  - 3.h.country
+  - 4.interpreters_day_time_telephone
+  - 5.interpreters_mobile_telephone
+  - 6.interpreters_email_address
+  - 7.interpreter_second_language
+  - 7.a.interpreters_signature
+  - 7.b.date_of_signature
+part_8:
+  - 1.a.preparers_last_name
+  - 1.a.preparers_first_name
+  - 2.preparers_business_or_org_name
+  - 3.a.street_number_and_name
+  - 3.b.apt_ste_flr
+  - 3.c.city_or_town
+  - 3.d.state
+  - 3.e.zipcode
+  - 3.f.province
+  - 3.h.country
+  - 4.preparers_day_time_telephone
+  - 5.preparers_mobile_telephone
+  - 6.preparers_email_address
+  - 7.a.preparer_not_an_attorney
+  - 7.b.preparer_is_an_attorney
+  - 8.a.preparers_signature
+  - 8.b.date_of_signature
+part_9:
+  - 1.a.last_name
+  - 1.b.first_name
+  - 1.c.middle_name
+  - 2.a_number
+  - 3.a.page_number
+  - 3.b.part_number
+  - 3.c.item_number
+  - 3.d.free_lines
+  - 4.a.page_number
+  - 4.b.part_number
+  - 4.c.item_number
+  - 4.d.free_lines
+  - 5.a.page_number
+  - 5.b.part_number
+  - 5.c.item_number
+  - 5.d.free_lines
+  - 6.a.page_number
+  - 6.b.part_number
+  - 6.c.item_number
+  - 6.d.free_lines
+  - 7.a.page_number
+  - 7.b.part_number
+  - 7.c.item_number
+  - 7.d.free_lines
