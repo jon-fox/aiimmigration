@@ -28,7 +28,7 @@ def fill_pdf(file_path, person):
                 field_numeral = widget.field_name.split('.')[-1].split('_')[0].split('Line')[-1]
                 if re.search(r'\[.*\]', field_numeral):
                     special_case_like_barcode.append(field_numeral)
-                # print(field_numeral)
+                print(field_numeral)
                 # print(widget.field_label + " | ")
                 # closest_match = get_closest_method_name(person, field_name)
                 # if closest_match:

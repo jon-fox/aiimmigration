@@ -1,352 +1,672 @@
 part_1:
-  relationship:
-    1.filing_for:
-      options: 
-        - Spouse
-        - Parent
-        - Brother/Sister
-        - Child
-    2.if_child_or_parent:
-      - child_married_parents
-      - stepchild/stepparent
-      - child_unmarried_parents
-      - child_adopted
-    3.related_by_adoption:
-      - yes
-      - no
-    4.citizenship_through_adoption:
-      - yes
-      - no
+  1:
+  - Spouse
+  - Parent
+  - Brother/Sister
+  - Child
+  2:
+  - child_married_parents
+  - stepchild/stepparent
+  - child_unmarried_parents
+  - child_adopted
+  3:
+  - yes
+  - no
+  4:
+  - yes
+  - no
 
 part_2:
-  - 1.alien_registration_number
-  - 2.uscis_account_number
-  - 3.ssn
-  - 4.a.last_name
-  - 4.b.first_name
-  - 4.c.middle_name
-  - 5.a.last_name
-  - 5.b.first_name
-  - 5.c.middle_name
-  - 6.city_town_village_of_birth
-  - 7.country_of_birth
-  - 8.dob_mm_dd_yyyy
-  - 9.sex
-  - 10.a.in_care_of_name
-  - 10.b.street_number_and_name
-  - 10.c.apt_ste_flr
-  - 10.d.city_or_town
-  - 10.e.state
-  - 10.f.zipcode
-  - 10.g.province
-  - 10.h.postalcode
-  - 10.i.country
-  - 11.mailing_and_physical_same
-  - 12.a.street_number_and_name
-  - 12.b.apt_ste_flr
-  - 12.c.city_or_town
-  - 12.d.state
-  - 12.e.zipcode
-  - 12.f.province
-  - 12.g.postalcode
-  - 12.h.country
-  - 13.a.date_from
-  - 13.b.date_to
-  - 14.a.street_number_and_name
-  - 14.b.apt_ste_flr
-  - 14.c.city_or_town
-  - 14.d.state
-  - 14.e.zipcode
-  - 14.f.province
-  - 14.g.postalcode
-  - 14.h.country
-  - 15.a.date_from
-  - 15.b.date_to
-  - 16.num_times_married
-  - 17.marital_status
-  - 18.marital_status
-  - 19.a.marital_status
-  - 19.b.marital_status
-  - 19.c.marital_status
-  - 19.d.marital_status
-  - 20.a.marital_status
-  - 20.b.marital_status
-  - 20.c.marital_status
-  - 21.marital_status
-  - 22.a.marital_status
-  - 22.b.marital_status
-  - 22.c.marital_status
-  - 23.marital_status
-  - 24.a.marital_status
-  - 24.b.marital_status
-  - 24.c.marital_status
-  - 25.marital_status
-  - 26.marital_status
-  - 27.marital_status
-  - 28.marital_status
-  - 29.marital_status
-  - 30.a.marital_status
-  - 30.b.marital_status
-  - 30.c.marital_status
-  - 31.marital_status
-  - 32.marital_status
-  - 33.marital_status
-  - 34.marital_status
-  - 35.marital_status
-  - 36.marital_status
-  - 37.marital_status
-  - 38.marital_status
-  - 39.a.marital_status
-  - 39.b.marital_status
-  - 39.c.marital_status
-  - 40.a.marital_status
-  - 40.b.marital_status
-  - 40.c.marital_status
-  - 40.d.marital_status
-  - 41.marital_status
-  - 42.marital_status
-  - 43.a.marital_status
-  - 43.b.marital_status
-  - 43.c.marital_status
-  - 43.d.marital_status
-  - 43.f.marital_status
-  - 43.g.marital_status
-  - 43.h.marital_status
-  - 44.marital_status
-  - 45.a.marital_status
-  - 45.b.marital_status
-  - 46.marital_status
-  - 47.a.marital_status
-  - 47.b.marital_status
-  - 47.c.marital_status
-  - 47.d.marital_status
-  - 47.e.marital_status
-  - 47.f.marital_status
-  - 47.g.marital_status
-  - 47.h.marital_status
-  - 48.marital_status
-  - 49.a.marital_status
-  - 49.b.marital_status
+  1:
+  - alien_registration_number
+  2:
+  - uscis_account_number
+  3:
+  - ssn
+  4a:
+  - last_name
+  4b:
+  - first_name
+  4c:
+  - middle_name
+  5a:
+  - last_name
+  5b:
+  - first_name
+  5c:
+  - middle_name
+  6:
+  - city_town_village_of_birth
+  7:
+  - country_of_birth
+  8:
+  - dob_mm_dd_yyyy
+  9:
+  - sex
+  10a:
+  - in_care_of_name
+  10b:
+  - street_number_and_name
+  10c:
+  - apt_ste_flr
+  10d:
+  - city_or_town
+  10e:
+  - state
+  10f:
+  - zipcode
+  10g:
+  - province
+  10h:
+  - postalcode
+  10i:
+  - country
+  11:
+  - mailing_and_physical_same
+  12a:
+  - street_number_and_name
+  12b:
+  - apt_ste_flr
+  12c:
+  - city_or_town
+  12d:
+  - state
+  12e:
+  - zipcode
+  12f:
+  - province
+  12g:
+  - postalcode
+  12h:
+  - country
+  13a:
+  - date_from
+  13b:
+  - date_to
+  14a:
+  - street_number_and_name
+  14b:
+  - apt_ste_flr
+  14c:
+  - city_or_town
+  14d:
+  - state
+  14e:
+  - zipcode
+  14f:
+  - province
+  14g:
+  - postalcode
+  14h:
+  - country
+  15a:
+  - date_from
+  15b:
+  - date_to
+  16:
+  - num_times_married
+  17:
+  - marital_status
+  18:
+  - marital_status
+  19a:
+  - marital_status
+  19b:
+  - marital_status
+  19c:
+  - marital_status
+  19d:
+  - marital_status
+  20a:
+  - marital_status
+  20b:
+  - marital_status
+  20c:
+  - marital_status
+  21:
+  - marital_status
+  22a:
+  - marital_status
+  22b:
+  - marital_status
+  22c:
+  - marital_status
+  23:
+  - marital_status
+  24a:
+  - marital_status
+  24b:
+  - marital_status
+  24c:
+  - marital_status
+  25:
+  - marital_status
+  26:
+  - marital_status
+  27:
+  - marital_status
+  28:
+  - marital_status
+  29:
+  - marital_status
+  30a:
+  - marital_status
+  30b:
+  - marital_status
+  30c:
+  - marital_status
+  31:
+  - marital_status
+  32:
+  - marital_status
+  33:
+  - marital_status
+  34:
+  - marital_status
+  35:
+  - marital_status
+  36:
+  - marital_status
+  37:
+  - marital_status
+  38:
+  - marital_status
+  39a:
+  - marital_status
+  39b:
+  - marital_status
+  39c:
+  - marital_status
+  40a:
+  - marital_status
+  40b:
+  - marital_status
+  40c:
+  - marital_status
+  40d:
+  - marital_status
+  41:
+  - marital_status
+  42:
+  - marital_status
+  43a:
+  - marital_status
+  43b:
+  - marital_status
+  43c:
+  - marital_status
+  43d:
+  - marital_status
+  43f:
+  - marital_status
+  43g:
+  - marital_status
+  43h:
+  - marital_status
+  44:
+  - marital_status
+  45a:
+  - marital_status
+  45b:
+  - marital_status
+  46:
+  - marital_status
+  47a:
+  - marital_status
+  47b:
+  - marital_status
+  47c:
+  - marital_status
+  47d:
+  - marital_status
+  47e:
+  - marital_status
+  47f:
+  - marital_status
+  47g:
+  - marital_status
+  47h:
+  - marital_status
+  48:
+  - marital_status
+  49a:
+  - marital_status
+  49b:
+  - marital_status
 part_3:
-  - 1.ethnicity
-  - 2.race
-  - 3.height
-  - 4.weight
-  - 5.eye_color
-  - 6.hair_color
+  1:
+  - ethnicity
+  2:
+  - race
+  3:
+  - height
+  4:
+  - weight
+  5:
+  - eye_color
+  6:
+  - hair_color
 part_4:
-  - 1.alien_registration_number
-  - 2.uscis_account_number
-  - 3.ssn
-  - 4.a.last_name
-  - 4.b.first_name
-  - 4.c.middle_name
-  - 5.a.last_name
-  - 5.b.first_name
-  - 5.c.middle_name
-  - 6.city_town_village_of_birth
-  - 7.country_of_birth
-  - 8.dob_mm_dd_yyyy
-  - 9.sex
-  - 10.has_anyone_filed_a_petition_for_you
-  - 11.a.street_number_and_name
-  - 11.b.apt_ste_flr
-  - 11.c.city_or_town
-  - 11.d.state
-  - 11.e.zipcode
-  - 11.f.province
-  - 11.g.postalcode
-  - 11.h.country
-  - 12.a.street_number_and_name
-  - 12.b.apt_ste_flr
-  - 12.c.city_or_town
-  - 12.d.state
-  - 12.e.zipcode
-  - 13.a.street_number_and_name
-  - 13.b.apt_ste_flr
-  - 13.c.city_or_town
-  - 13.e.postalcode
-  - 13.d.province
-  - 13.e.postalcode
-  - 13.f.country
-  - 14.daytime_telephone_number
-  - 15.mobile_telephone_number
-  - 16.email_address
-  - 17.number_of_times_married
-  - 18.marital_status
-  - 19.date_of_current_marriage
-  - 20.a.city_or_town
-  - 20.b.state
-  - 20.c.province
-  - 20.d.country
-  - 21.a.last_name
-  - 21.b.first_name
-  - 21.c.middle_name
-  - 22.date_marriage_ended
-  - 23.a.last_name
-  - 23.b.first_name
-  - 23.c.middle_name
-  - 24.date_marriage_ended
-  - 25.a.last_name
-  - 25.b.first_name
-  - 25.c.middle_name
-  - 26.relationship
-  - 27.dob
-  - 28.country_of_birth
-  - 29.a.last_name
-  - 29.b.first_name
-  - 29.c.middle_name
-  - 30.relationship
-  - 31.dob
-  - 32.country_of_birth
-  - 33.a.last_name
-  - 33.b.first_name
-  - 33.c.middle_name
-  - 34.relationship
-  - 35.dob
-  - 36.country_of_birth
-  - 37.a.last_name
-  - 37.b.first_name
-  - 37.c.middle_name
-  - 38.relationship
-  - 39.dob
-  - 40.country_of_birth
-  - 41.a.last_name
-  - 41.b.first_name
-  - 41.c.middle_name
-  - 42.relationship
-  - 43.dob
-  - 44.country_of_birth
-  - 45.ever_in_the_united_states
-  - 46.a.class_of_admission
-  - 46.b.i_94_record_number
-  - 46.c.date_of_arrival
-  - 46.d.date_of_expiry
-  - 47.passport_number
-  - 48.travel_document_number
-  - 49.country_of_passport_issuance
-  - 50.passport_or_travel_doc_expiration
-  - 51.a.current_employer
-  - 51.b.street_number_and_name
-  - 51.c.apt_ste_flr
-  - 51.d.city_or_town
-  - 51.e.state
-  - 51.f.zipcode
-  - 51.g.province
-  - 51.h.postalcode
-  - 51.i.country
-  - 52.date_employment_began
-  - 53.ever_in_immigration_proceedings
-  - 54.type_of_proceedings
-  - 55.a.city_or_town
-  - 55.b.state
-  - 56.date
-  - 57.a.last_name
-  - 57.b.first_name
-  - 57.c.middle_name
-  - 58.a.street_number_and_name
-  - 58.b.apt_ste_flr
-  - 58.c.city_or_town
-  - 58.d.province
-  - 58.e.postalcode
-  - 58.f.country
-  - 59.a.street_number_and_name
-  - 59.b.apt_ste_flr
-  - 59.c.city_or_town
-  - 59.d.state
-  - 59.e.zipcode
-  - 59.f.province
-  - 59.h.country
-  - 60.a.date_from
-  - 60.b.date_to
-  - 61.a.city_or_town
-  - 61.b.state
-  - 62.a.city_or_town
-  - 62.b.province
-  - 62.c.country
+  1:
+  - alien_registration_number
+  2:
+  - uscis_account_number
+  3:
+  - ssn
+  4a:
+  - last_name
+  4b:
+  - first_name
+  4c:
+  - middle_name
+  5a:
+  - last_name
+  5b:
+  - first_name
+  5c:
+  - middle_name
+  6:
+  - city_town_village_of_birth
+  7:
+  - country_of_birth
+  8:
+  - dob_mm_dd_yyyy
+  9:
+  - sex
+  10:
+  - has_anyone_filed_a_petition_for_you
+  11a:
+  - street_number_and_name
+  11b:
+  - apt_ste_flr
+  11c:
+  - city_or_town
+  11d:
+  - state
+  11e:
+  - zipcode
+  11f:
+  - province
+  11g:
+  - postalcode
+  11h:
+  - country
+  12a:
+  - street_number_and_name
+  12b:
+  - apt_ste_flr
+  12c:
+  - city_or_town
+  12d:
+  - state
+  12e:
+  - zipcode
+  13a:
+  - street_number_and_name
+  13b:
+  - apt_ste_flr
+  13c:
+  - city_or_town
+  13d:
+  - province
+  13e:
+  - postalcode
+  13f:
+  - country
+  14:
+  - daytime_telephone_number
+  15:
+  - mobile_telephone_number
+  16:
+  - email_address
+  17:
+  - number_of_times_married
+  18:
+  - marital_status
+  19:
+  - date_of_current_marriage
+  20a:
+  - city_or_town
+  20b:
+  - state
+  20c:
+  - province
+  20d:
+  - country
+  21a:
+  - last_name
+  21b:
+  - first_name
+  21c:
+  - middle_name
+  22:
+  - date_marriage_ended
+  23a:
+  - last_name
+  23b:
+  - first_name
+  23c:
+  - middle_name
+  24:
+  - date_marriage_ended
+  25a:
+  - last_name
+  25b:
+  - first_name
+  25c:
+  - middle_name
+  26:
+  - relationship
+  27:
+  - dob
+  28:
+  - country_of_birth
+  29a:
+  - last_name
+  29b:
+  - first_name
+  29c:
+  - middle_name
+  30:
+  - relationship
+  31:
+  - dob
+  32:
+  - country_of_birth
+  33a:
+  - last_name
+  33b:
+  - first_name
+  33c:
+  - middle_name
+  34:
+  - relationship
+  35:
+  - dob
+  36:
+  - country_of_birth
+  37a:
+  - last_name
+  37b:
+  - first_name
+  37c:
+  - middle_name
+  38:
+  - relationship
+  39:
+  - dob
+  40:
+  - country_of_birth
+  41a:
+  - last_name
+  41b:
+  - first_name
+  41c:
+  - middle_name
+  42:
+  - relationship
+  43:
+  - dob
+  44:
+  - country_of_birth
+  45:
+  - ever_in_the_united_states
+  46a:
+  - class_of_admission
+  46b:
+  - i_94_record_number
+  46c:
+  - date_of_arrival
+  46d:
+  - date_of_expiry
+  47:
+  - passport_number
+  48:
+  - travel_document_number
+  49:
+  - country_of_passport_issuance
+  50:
+  - passport_or_travel_doc_expiration
+  51a:
+  - current_employer
+  51b:
+  - street_number_and_name
+  51c:
+  - apt_ste_flr
+  51d:
+  - city_or_town
+  51e:
+  - state
+  51f:
+  - zipcode
+  51g:
+  - province
+  51h:
+  - postalcode
+  51i:
+  - country
+  52:
+  - date_employment_began
+  53:
+  - ever_in_immigration_proceedings
+  54:
+  - type_of_proceedings
+  55a:
+  - city_or_town
+  55b:
+  - state
+  56:
+  - date
+  57a:
+  - last_name
+  57b:
+  - first_name
+  57c:
+  - middle_name
+  58a:
+  - street_number_and_name
+  58b:
+  - apt_ste_flr
+  58c:
+  - city_or_town
+  58d:
+  - province
+  58e:
+  - postalcode
+  58f:
+  - country
+  59a:
+  - street_number_and_name
+  59b:
+  - apt_ste_flr
+  59c:
+  - city_or_town
+  59d:
+  - state
+  59e:
+  - zipcode
+  59f:
+  - province
+  59h:
+  - country
+  60a:
+  - date_from
+  60b:
+  - date_to
+  61a:
+  - city_or_town
+  61b:
+  - state
+  62a:
+  - city_or_town
+  62b:
+  - province
+  62c:
+  - country
 part_5:
-  - 1.previously_filed
-  - 2.a.last_name
-  - 2.b.first_name
-  - 2.c.middle_name
-  - 3.a.city_or_town
-  - 3.b.state
-  - 4.date_filed
-  - 5.result
-  - 6.a.last_name
-  - 6.b.first_name
-  - 6.c.middle_name
-  - 7.relationship
-  - 8.a.last_name
-  - 8.b.first_name
-  - 8.c.middle_name
-  - 9.relationship
+  1:
+  - previously_filed
+  2a:
+  - last_name
+  2b:
+  - first_name
+  2c:
+  - middle_name
+  3a:
+  - city_or_town
+  3b:
+  - state
+  4:
+  - date_filed
+  5:
+  - result
+  6a:
+  - last_name
+  6b:
+  - first_name
+  6c:
+  - middle_name
+  7:
+  - relationship
+  8a:
+  - last_name
+  8b:
+  - first_name
+  8c:
+  - middle_name
+  9:
+  - relationship
 part_6:
-  - 1.a.understand_english
-  - 1.b.language_if_not_english
-  - 2.preparer_in_part_8
-  - 3.petitioner_day_telephone
-  - 4.petitioner_mbile_telephone
-  - 5.petitioner_email_address
-  - 6.a.petitioner_sign_in_ink
-  - 6.b.date_of_signature
+  1a:
+  - understand_english
+  1b:
+  - language_if_not_english
+  2:
+  - preparer_in_part_8
+  3:
+  - petitioner_day_telephone
+  4:
+  - petitioner_mbile_telephone
+  5:
+  - petitioner_email_address
+  6a:
+  - petitioner_sign_in_ink
+  6b:
+  - date_of_signature
 part_7:
-  - 1.a.interpreter_last_name
-  - 1.b.interpreter_first_name
-  - 2.interpreter_business_or_org_name
-  - 3.a.street_number_and_name
-  - 3.b.apt_ste_flr
-  - 3.c.city_or_town
-  - 3.d.state
-  - 3.e.zipcode
-  - 3.f.province
-  - 3.h.country
-  - 4.interpreters_day_time_telephone
-  - 5.interpreters_mobile_telephone
-  - 6.interpreters_email_address
-  - 7.interpreter_second_language
-  - 7.a.interpreters_signature
-  - 7.b.date_of_signature
+  1a:
+  - interpreter_last_name
+  1b:
+  - interpreter_first_name
+  2:
+  - interpreter_business_or_org_name
+  3a:
+  - street_number_and_name
+  3b:
+  - apt_ste_flr
+  3c:
+  - city_or_town
+  3d:
+  - state
+  3e:
+  - zipcode
+  3f:
+  - province
+  3h:
+  - country
+  4:
+  - interpreters_day_time_telephone
+  5:
+  - interpreters_mobile_telephone
+  6:
+  - interpreters_email_address
+  7:
+  - interpreter_second_language
+  7a:
+  - interpreters_signature
+  7b:
+  - date_of_signature
 part_8:
-  - 1.a.preparers_last_name
-  - 1.a.preparers_first_name
-  - 2.preparers_business_or_org_name
-  - 3.a.street_number_and_name
-  - 3.b.apt_ste_flr
-  - 3.c.city_or_town
-  - 3.d.state
-  - 3.e.zipcode
-  - 3.f.province
-  - 3.h.country
-  - 4.preparers_day_time_telephone
-  - 5.preparers_mobile_telephone
-  - 6.preparers_email_address
-  - 7.a.preparer_not_an_attorney
-  - 7.b.preparer_is_an_attorney
-  - 8.a.preparers_signature
-  - 8.b.date_of_signature
+  1a:
+  - preparers_last_name
+  1a:
+  - preparers_first_name
+  2:
+  - preparers_business_or_org_name
+  3a:
+  - street_number_and_name
+  3b:
+  - apt_ste_flr
+  3c:
+  - city_or_town
+  3d:
+  - state
+  3e:
+  - zipcode
+  3f:
+  - province
+  3h:
+  - country
+  4:
+  - preparers_day_time_telephone
+  5:
+  - preparers_mobile_telephone
+  6:
+  - preparers_email_address
+  7a:
+  - preparer_not_an_attorney
+  7b:
+  - preparer_is_an_attorney
+  8a:
+  - preparers_signature
+  8b:
+  - date_of_signature
 part_9:
-  - 1.a.last_name
-  - 1.b.first_name
-  - 1.c.middle_name
-  - 2.a_number
-  - 3.a.page_number
-  - 3.b.part_number
-  - 3.c.item_number
-  - 3.d.free_lines
-  - 4.a.page_number
-  - 4.b.part_number
-  - 4.c.item_number
-  - 4.d.free_lines
-  - 5.a.page_number
-  - 5.b.part_number
-  - 5.c.item_number
-  - 5.d.free_lines
-  - 6.a.page_number
-  - 6.b.part_number
-  - 6.c.item_number
-  - 6.d.free_lines
-  - 7.a.page_number
-  - 7.b.part_number
-  - 7.c.item_number
-  - 7.d.free_lines
+  1a:
+  - last_name
+  1b:
+  - first_name
+  1c:
+  - middle_name
+  2:
+  - a_number
+  3a:
+  - page_number
+  3b:
+  - part_number
+  3c:
+  - item_number
+  3d:
+  - free_lines
+  4a:
+  - page_number
+  4b:
+  - part_number
+  4c:
+  - item_number
+  4d:
+  - free_lines
+  5a:
+  - page_number
+  5b:
+  - part_number
+  5c:
+  - item_number
+  5d:
+  - free_lines
+  6a:
+  - page_number
+  6b:
+  - part_number
+  6c:
+  - item_number
+  6d:
+  - free_lines
+  7a:
+  - page_number
+  7b:
+  - part_number
+  7c:
+  - item_number
+  7d:
+  - free_lines
