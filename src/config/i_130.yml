@@ -48,7 +48,9 @@ part_2:
   10b:
   - street_number_and_name
   10c:
-  - apt_ste_flr
+  - apt
+  - ste
+  - floor
   10d:
   - city_or_town
   10e:
@@ -66,7 +68,9 @@ part_2:
   12a:
   - street_number_and_name
   12b:
-  - apt_ste_flr
+  - apt
+  - ste
+  - floor
   12c:
   - city_or_town
   12d:
@@ -86,7 +90,9 @@ part_2:
   14a:
   - street_number_and_name
   14b:
-  - apt_ste_flr
+  - apt
+  - ste
+  - floor
   14c:
   - city_or_town
   14d:
@@ -106,133 +112,151 @@ part_2:
   16:
   - num_times_married
   17:
-  - marital_status
+  - Single, Never Married
+  - Married
+  - Divorced
+  - Widowed
+  - Separated
+  - Annulled
   18:
-  - marital_status
+  - date_of_current_marriage
   19a:
-  - marital_status
+  - city_or_town
   19b:
-  - marital_status
+  - state
   19c:
-  - marital_status
+  - province
   19d:
-  - marital_status
+  - country
   20a:
-  - marital_status
+  - last_name
   20b:
-  - marital_status
+  - first_name
   20c:
-  - marital_status
+  - middle_name
   21:
-  - marital_status
+  - date_marriage_ended
   22a:
-  - marital_status
+  - last_name
   22b:
-  - marital_status
+  - first_name
   22c:
-  - marital_status
+  - middle_name
   23:
-  - marital_status
+  - date_marriage_ended
   24a:
-  - marital_status
+  - last_name
   24b:
-  - marital_status
+  - first_name
   24c:
-  - marital_status
+  - middle_name
   25:
-  - marital_status
+  - dob
   26:
-  - marital_status
+  - male
+  - female
   27:
-  - marital_status
+  - country_of_birth
   28:
-  - marital_status
+  - city_town_village_of_residence
   29:
-  - marital_status
+  - country_of_residence
   30a:
-  - marital_status
+  - last_name
   30b:
-  - marital_status
+  - first_name
   30c:
-  - marital_status
+  - middle_name
   31:
-  - marital_status
+  - dob
   32:
-  - marital_status
+  - male
+  - female
   33:
-  - marital_status
+  - country_of_birth
   34:
-  - marital_status
+  - city_town_village_of_residence
   35:
-  - marital_status
+  - country_of_residence
   36:
-  - marital_status
+  - us_citizen
+  - lawful_permanent_resident
   37:
-  - marital_status
+  - birth_in_the_us
+  - naturalization
+  - parents
   38:
-  - marital_status
+  - yes
+  - no
   39a:
-  - marital_status
+  - certificate_number
   39b:
-  - marital_status
+  - place_of_issuance
   39c:
-  - marital_status
+  - date_of_issuance
   40a:
-  - marital_status
+  - class_of_admission
   40b:
-  - marital_status
+  - date_of_admission
   40c:
-  - marital_status
+  - city_or_town
   40d:
-  - marital_status
+  - state
   41:
-  - marital_status
+  - yes
+  - no
   42:
-  - marital_status
+  - name_of_employer_company
   43a:
-  - marital_status
+  - street_number_and_name
   43b:
-  - marital_status
+  - apt
+  - ste
+  - floor
   43c:
-  - marital_status
+  - city_or_town
   43d:
-  - marital_status
+  - state
+  43e:
+  - zipcode
   43f:
-  - marital_status
+  - province
   43g:
-  - marital_status
+  - postalcode
   43h:
-  - marital_status
+  - country
   44:
-  - marital_status
+  - your_occupation
   45a:
-  - marital_status
+  - date_from
   45b:
-  - marital_status
+  - date_to
   46:
-  - marital_status
+  - name_of_employer_company
   47a:
-  - marital_status
+  - street_number_and_name
   47b:
-  - marital_status
+  - apt
+  - ste
+  - floor
   47c:
-  - marital_status
+  - city_or_town
   47d:
-  - marital_status
+  - state
   47e:
-  - marital_status
+  - zipcode
   47f:
-  - marital_status
+  - province
   47g:
-  - marital_status
+  - postalcode
   47h:
-  - marital_status
+  - country
   48:
-  - marital_status
+  - your_occupation
   49a:
-  - marital_status
+  - date_from
   49b:
-  - marital_status
+  - date_to
 part_3:
   1:
   - ethnicity
@@ -278,7 +302,9 @@ part_4:
   11a:
   - street_number_and_name
   11b:
-  - apt_ste_flr
+  - apt
+  - ste
+  - floor
   11c:
   - city_or_town
   11d:
@@ -294,7 +320,9 @@ part_4:
   12a:
   - street_number_and_name
   12b:
-  - apt_ste_flr
+  - apt
+  - ste
+  - floor
   12c:
   - city_or_town
   12d:
@@ -304,7 +332,9 @@ part_4:
   13a:
   - street_number_and_name
   13b:
-  - apt_ste_flr
+  - apt
+  - ste
+  - floor
   13c:
   - city_or_town
   13d:
@@ -432,7 +462,9 @@ part_4:
   51b:
   - street_number_and_name
   51c:
-  - apt_ste_flr
+  - apt
+  - ste
+  - floor
   51d:
   - city_or_town
   51e:
@@ -466,7 +498,9 @@ part_4:
   58a:
   - street_number_and_name
   58b:
-  - apt_ste_flr
+  - apt
+  - ste
+  - floor
   58c:
   - city_or_town
   58d:
@@ -478,7 +512,9 @@ part_4:
   59a:
   - street_number_and_name
   59b:
-  - apt_ste_flr
+  - apt
+  - ste
+  - floor
   59c:
   - city_or_town
   59d:
@@ -563,7 +599,9 @@ part_7:
   3a:
   - street_number_and_name
   3b:
-  - apt_ste_flr
+  - apt
+  - ste
+  - floor
   3c:
   - city_or_town
   3d:
@@ -596,7 +634,9 @@ part_8:
   3a:
   - street_number_and_name
   3b:
-  - apt_ste_flr
+  - apt
+  - ste
+  - floor
   3c:
   - city_or_town
   3d:
