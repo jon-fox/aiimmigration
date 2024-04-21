@@ -589,118 +589,172 @@ part_4:
   section_description_7:
   - Place of Beneficiary's Current Marriage (if married)
   20a:
+  - City Or Town
   - city_or_town
   20b:
+  - State
   - state
   20c:
+  - Province
   - province
   20d:
+  - Country
   - country
   section_description_8:
   - Names of Beneficiary's Spouses (if any)
   21a:
+  - Family Name (Last Name)
   - last_name
   21b:
+  - Given Name (First Name)
   - first_name
   21c:
+  - Middle Name
   - middle_name
   22:
+  - Date Marriage Ended (mm/dd/yyyy)
   - date_marriage_ended
   23a:
+  - Family Name (Last Name)
   - last_name
   23b:
+  - Given Name (First Name)
   - first_name
   23c:
+  - Middle Name
   - middle_name
   24:
+  - Date Marriage Ended (mm/dd/yyyy)
   - date_marriage_ended
   section_description_9:
   - Information About Beneficiary's Family
   25a:
+  - Family Name (Last Name)
   - last_name
   25b:
+  - Given Name (First Name)
   - first_name
   25c:
+  - Middle Name
   - middle_name
   26:
+  - Relationship
   - relationship
   27:
+  - Date of Birth (mm/dd/yyyy)
   - dob
   28:
+  - Country of Birth
   - country_of_birth
   29a:
+  - Family Name (Last Name)
   - last_name
   29b:
+  - Given Name (First Name)
   - first_name
   29c:
+  - Middle Name
   - middle_name
   30:
+  - Relationship
   - relationship
   31:
+  - Date of Birth (mm/dd/yyyy)
   - dob
   32:
+  - Country of Birth
   - country_of_birth
   33a:
+  - Family Name (Last Name)
   - last_name
   33b:
+  - Given Name (First Name)
   - first_name
   33c:
+  - Middle Name
   - middle_name
   34:
+  - Relationship
   - relationship
   35:
+  - Date of Birth (mm/dd/yyyy)
   - dob
   36:
+  - Country of Birth
   - country_of_birth
   37a:
+  - Family Name (Last Name)
   - last_name
   37b:
+  - Given Name (First Name)
   - first_name
   37c:
+  - Middle Name
   - middle_name
   38:
+  - Relationship
   - relationship
   39:
+  - Date of Birth (mm/dd/yyyy)
   - dob
   40:
+  - Country of Birth
   - country_of_birth
   41a:
+  - Family Name (Last Name)
   - last_name
   41b:
+  - Given Name (First Name)
   - first_name
   41c:
+  - Middle Name
   - middle_name
   42:
+  - Relationship
   - relationship
   43:
+  - Date of Birth (mm/dd/yyyy)
   - dob
   44:
+  - Country of Birth
   - country_of_birth
   section_description_10:
   - Beneficiary's Entry Information
   45:
-  - ever_in_the_united_states
+  - Was the beneficiary ever in the United States?
+  - yes
+  - no
   46a:
+  - He or she arrived as a (Class of Admission)
   - class_of_admission
   46b:
+  - Form I-94 Arrival-Departure Record Number
   - i_94_record_number
   46c:
+  - Date of Arrival (mm/dd/yyyy)
   - date_of_arrival
   46d:
+  - Date Authorized stay expired, or will expire, as shown on Form I-94 or I-95 (mm/dd/yyyy) or type or print "D/S" for Duration of Status
   - date_of_expiry
   47:
+  - Passport Number
   - passport_number
   48:
+  - Travel Document Number
   - travel_document_number
   49:
+  - Country of Issuance of Passport or Travel Document
   - country_of_passport_issuance
   50:
+  - Expiration Date of Passport or Travel Document (mm/dd/yyyy)
   - passport_or_travel_doc_expiration
   section_description_11:
   - Beneficiary's Employment Information
   51a:
+  - Name of Current Employer (if applicable)
   - current_employer
   51b:
+  - Street Number and Name
   - street_number_and_name
   51c:
   - Apartment
@@ -708,38 +762,58 @@ part_4:
   - Floor
   - Value
   51d:
+  - City or Town
   - city_or_town
   51e:
+  - State
   - state
   51f:
+  - ZIP Code
   - zipcode
   51g:
+  - Province
   - province
   51h:
+  - Postal Code
   - postalcode
   51i:
+  - Country
   - country
   52:
+  - Date Employment Began (mm/dd/yyyy)
   - date_employment_began
   section_description_12:
   - Additional Information About Beneficiary
   53:
-  - ever_in_immigration_proceedings
+  - Was the beneficiary EVER in immigration proceedings
+  - yes
+  - no
   54:
-  - type_of_proceedings
+  - If you answered "Yes" select the type of proceedings and provide the location and the date of the proceedings.
+  - Removal
+  - Exclusion/Deportation
+  - Rescission
+  - Other Judicial Proceedings
   55a:
+  - City or Town
   - city_or_town
   55b:
+  - State
   - state
   56:
+  - Date (mm/dd/yyyy)
   - date
   57a:
+  - Family Name (Last Name)
   - last_name
   57b:
+  - Given Name (First Name)
   - first_name
   57c:
+  - Middle Name
   - middle_name
   58a:
+  - Street Number and Name
   - street_number_and_name
   58b:
   - Apartment
@@ -747,14 +821,19 @@ part_4:
   - Floor
   - Value
   58c:
+  - City or Town
   - city_or_town
   58d:
+  - Province
   - province
   58e:
+  - Postal Code
   - postalcode
   58f:
+  - Country
   - country
   59a:
+  - Street Number and Name
   - street_number_and_name
   59b:
   - Apartment
@@ -762,63 +841,92 @@ part_4:
   - Floor
   - Value
   59c:
+  - City or Town
   - city_or_town
   59d:
+  - State
   - state
   59e:
+  - ZIP Code
   - zipcode
   59f:
+  - Province
   - province
   59h:
+  - Country
   - country
   60a:
+  - Date From (mm/dd/yyyy)
   - date_from
   60b:
+  - Date To (mm/dd/yyyy)
   - date_to
   61a:
+  - City or Town
   - city_or_town
   61b:
+  - State
   - state
   62a:
+  - City or Town
   - city_or_town
   62b:
+  - Province
   - province
   62c:
+  - Country
   - country
 part_5:
   description:
   - Other Information
   1:
-  - previously_filed
+  - Have you ever filed a petition for any other alien?
+  - yes
+  - no
   2a:
+  - Family Name (Last Name)
   - last_name
   2b:
+  - Given Name (First Name)
   - first_name
   2c:
+  - Middle Name
   - middle_name
   3a:
+  - City or Town
   - city_or_town
   3b:
+  - State
   - state
   4:
+  - Date Filed (mm/dd/yyyy)
   - date_filed
   5:
+  - Result (for example, approved, denied, withdrawn)
   - result
   6a:
+  - Family Name (Last Name)
   - last_name
   6b:
+  - Given Name (First Name)
   - first_name
   6c:
+  - Middle Name
   - middle_name
   7:
+  - Relationship
   - relationship
   8a:
+  - Family Name (Last Name)
   - last_name
   8b:
+  - Given Name (First Name)
   - first_name
   8c:
+  - Middle Name
   - middle_name
   9:
+  - Relationship
   - relationship
 part_6:
   description:
@@ -826,26 +934,34 @@ part_6:
   section_description_1:
   - Petitioner's Statement
   1a:
+  - I can read and understand English, and I have read and understand every question and instruction on this petition and my answer to every question.
   - understand_english
   1b:
+  - The interpreter named in Part 7 read to me every question and instruction on this petition and my answer to every question in (language) a language in which I am fluent, I understood all of the information as interpreted.
   - language_if_not_english
   2:
+  - At my request, the preparer named in Part 8 prepared this petition for me based only upon information I provided or authorized.
   - preparer_in_part_8
   section_description_3:
   - Petitioner's Contact Information
   3:
+  - Petitioner's Daytime Telephone Number
   - petitioner_day_telephone
   4:
+  - Petitioner's Mobile Telephone Number (if any)
   - petitioner_mbile_telephone
   5:
+  - Petitioner's Email Address (if any)
   - petitioner_email_address
   section_description_4:
   - Petitioner's Declaration and Certification
   section_description_5:
   - Petitioner's Signature
   6a:
+  - Petitioner's Signature (Sign in ink)
   - petitioner_sign_in_ink
   6b:
+  - Date of Signature (mm/dd/yyyy)
   - date_of_signature
 part_7:
   description:
@@ -853,14 +969,18 @@ part_7:
   section_description_1:
   - Intepreter's Full Name
   1a:
+  - Interpreter's Family Name (Last Name)
   - interpreter_last_name
   1b:
+  - Interpreter's Given Name (First Name)
   - interpreter_first_name
   2:
+  - Interpreter's Business or Organization Name (if any)
   - interpreter_business_or_org_name
   section_description_2:
   - Interpreter's Mailing Address
   3a:
+  - Street Number and Name
   - street_number_and_name
   3b:
   - Apartment
@@ -868,22 +988,30 @@ part_7:
   - Floor
   - Value
   3c:
+  - City or Town
   - city_or_town
   3d:
+  - State
   - state
   3e:
+  - ZIP Code
   - zipcode
   3f:
+  - Province
   - province
   3h:
+  - Country
   - country
   section_description_3:
   - Interpreter's Contact Information
   4:
+  - Interpreter's Daytime Telephone Number
   - interpreters_day_time_telephone
   5:
+  - Interpreter's Mobile Telephone Number (if any)
   - interpreters_mobile_telephone
   6:
+  - Interpreter's Email Address (if any)
   - interpreters_email_address
   section_description_4:
   - Interpreter's Certification
@@ -894,8 +1022,10 @@ part_7:
   7:
   - interpreter_second_language
   7a:
+  - Interpreter's Signature (Sign in ink)
   - interpreters_signature
   7b:
+  - Date of Signature (mm/dd/yyyy)
   - date_of_signature
 part_8:
   description:
@@ -903,14 +1033,18 @@ part_8:
   section_description_1:
   - Preparer's Full Name
   1a:
+  - Preparer's Family Name (Last Name)
   - preparers_last_name
   1b:
+  - Preparer's Given Name (First Name)
   - preparers_first_name
   2:
+  - Preparer's Business or Organization Name (if any)
   - preparers_business_or_org_name
   section_description_2:
   - Preparer's Mailing Address
   3a:
+  - Street Number and Name
   - street_number_and_name
   3b:
   - Apartment
@@ -918,85 +1052,121 @@ part_8:
   - Floor
   - Value
   3c:
+  - City or Town
   - city_or_town
   3d:
+  - State
   - state
   3e:
+  - ZIP Code
   - zipcode
   3f:
+  - Province
   - province
   3h:
+  - Country
   - country
   section_description_3:
   - Preparer's Contact Information
   4:
+  - Preparer's Daytime Telephone Number
   - preparers_day_time_telephone
   5:
+  - Preparer's Mobile Telephone Number (if any)
   - preparers_mobile_telephone
   6:
+  - Preparer's Email Address (if any)
   - preparers_email_address
   section_description_4:
   - Preparer's Statement
   7a:
+  - I am not an attorney or accredited representative but have prepared this petition on behalf of the petitioner and with the petitioner's consent.
   - preparer_not_an_attorney
   7b:
+  - I am an attorney or accredited representative and my representation of the petitioner in this case () extends () does not extend beyond preparation of this petition.
   - preparer_is_an_attorney
   section_description_5:
   - Preparer's Certification
   section_description_6:
   - Preparer's Signature
   8a:
+  - Preparer's Signature (Sign in ink)
   - preparers_signature
   8b:
+  - Date of Signature (mm/dd/yyyy)
   - date_of_signature
 part_9:
   description:
   - Additional Information
   1a:
+  - Family Name (Last Name)
   - last_name
   1b:
+  - Given Name (First Name)
   - first_name
   1c:
+  - Middle Name
   - middle_name
   2:
+  - A-Number (if any)
   - a_number
   3a:
+  - Page Number
   - page_number
   3b:
+  - Part Number
   - part_number
   3c:
+  - Item Number
   - item_number
   3d:
+  - Additional Lines
   - free_lines
   4a:
+  - Page Number
   - page_number
   4b:
+  - Part Number
   - part_number
   4c:
+  - Item Number
   - item_number
   4d:
+  - Additional Lines
   - free_lines
   5a:
+  - Page Number
   - page_number
   5b:
+  - Part Number
   - part_number
   5c:
+  - Item Number
   - item_number
   5d:
+  - Additional Lines
   - free_lines
   6a:
+  - Page Number
   - page_number
   6b:
+  - Part Number
   - part_number
   6c:
+  - Item Number
   - item_number
   6d:
+  - Additional Lines
   - free_lines
   7a:
+  - Page Number
   - page_number
   7b:
+  - Part Number
   - part_number
   7c:
+  - Item Number
   - item_number
   7d:
+  - Additional Lines
   - free_lines

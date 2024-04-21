@@ -1,11 +1,11 @@
-CREATE TABLE conversations (
+CREATE TABLE conversations.conversations (
     id SERIAL PRIMARY KEY,
     user_input TEXT,
     ai_response TEXT,
     created_at TIMESTAMP DEFAULT CURRENT_TIMESTAMP
 );
 
-CREATE TABLE public.conversation_vectors (
+CREATE TABLE conversations.conversation_vectors (
     id SERIAL PRIMARY KEY,
     -- content TEXT,
     vector_data VECTOR(1536)  -- Example vector size, adjust based on your actual use case

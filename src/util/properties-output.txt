@@ -3039,14 +3039,6 @@ def DateofSignature(self, value):
     self._DateofSignature = value
 
 @property
-def PDF417BarCode1(self):
-    return self._PDF417BarCode1
-
-@PDF417BarCode1.setter
-def PDF417BarCode1(self, value):
-    self._PDF417BarCode1 = value
-
-@property
 def AlienNumber(self):
     return self._AlienNumber
 
