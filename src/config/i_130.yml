@@ -48,94 +48,134 @@ part_2:
   section_description_2:
   - Other Names Used (if any)
   5a:
+  - Family Name (Last Name)
   - last_name
   5b:
+  - Given Name (First Name)
   - first_name
   5c:
+  - Middle Name
   - middle_name
   section_description_3:
   - Other Information
   6:
+  - City/Town/Village of Birth
   - city_town_village_of_birth
   7:
+  - Country of Birth
   - country_of_birth
   8:
+  - Date of Birth (mm/dd/yyyy)
   - dob_mm_dd_yyyy
   9:
-  - sex
+  - Sex
+  - male
+  - female
   section_description_4:
   - Mailing Address
   10a:
+  - In Care Of Name
   - in_care_of_name
   10b:
+  - Street Number and Name
   - street_number_and_name
   10c:
-  - apt
-  - ste
-  - floor
+  - Apartment
+  - Suite
+  - Floor
+  - Value
   10d:
+  - City or Town
   - city_or_town
   10e:
+  - State
   - state
   10f:
+  - ZIP Code
   - zipcode
   10g:
+  - Province
   - province
   10h:
+  - Postal Code
   - postalcode
   10i:
+  - Country
   - country
   11:
-  - mailing_and_physical_same
+  - Is your current mailing address the same as your physical address?
+  - yes
+  - no
   section_description_5:
   - Address History
   12a:
+  - Street Number and Name
   - street_number_and_name
   12b:
-  - apt
-  - ste
-  - floor
+  - Apartment
+  - Suite
+  - Floor
+  - Value
   12c:
+  - City or Town
   - city_or_town
   12d:
+  - State
   - state
   12e:
+  - ZIP Code
   - zipcode
   12f:
+  - Province
   - province
   12g:
+  - Postal Code
   - postalcode
   12h:
+  - Country
   - country
   13a:
+  - Date From (mm/dd/yyyy)
   - date_from
   13b:
+  - Date To (mm/dd/yyyy)
   - date_to
   14a:
+  - Street Number and Name
   - street_number_and_name
   14b:
-  - apt
-  - ste
-  - floor
+  - Apartment
+  - Suite
+  - Floor
+  - Value
   14c:
+  - City or Town
   - city_or_town
   14d:
+  - State
   - state
   14e:
+  - ZIP Code
   - zipcode
   14f:
+  - Province
   - province
   14g:
+  - Postal Code
   - postalcode
   14h:
+  - Country
   - country
   15a:
+  - Date From (mm/dd/yyyy)
   - date_from
   15b:
+  - Date To (mm/dd/yyyy)
   - date_to
   section_description_6:
   - Your Marital Information
   16:
+  - How Many Times Have You Been Married?
   - num_times_married
   17:
   - Single, Never Married
@@ -145,267 +185,406 @@ part_2:
   - Separated
   - Annulled
   18:
+  - Date of Current Marriage (if currently married) (mm/dd/yyyy)
   - date_of_current_marriage
   section_description_7:
   - Place of Your Current Marriage (if married)
   19a:
+  - City or Town
   - city_or_town
   19b:
+  - State
   - state
   19c:
+  - Province
   - province
   19d:
+  - Country
   - country
   section_description_8:
   - Names of All Your Spouses, Spouse 1 first, then all prior (if any)
   20a:
+  - Family Name (Last Name)
   - last_name
   20b:
+  - Given Name (First Name)
   - first_name
   20c:
+  - Middle Name
   - middle_name
   21:
+  - Date Marriage Ended (mm/dd/yyyy)
   - date_marriage_ended
   22a:
+  - Family Name (Last Name)
   - last_name
   22b:
+  - Given Name (First Name)
   - first_name
   22c:
+  - Middle Name
   - middle_name
   23:
+  - Date Marriage Ended (mm/dd/yyyy)
   - date_marriage_ended
   section_description_9:
   - Information About Your Parents
   24a:
+  - Family Name (Last Name)
   - last_name
   24b:
+  - Given Name (First Name)
   - first_name
   24c:
+  - Middle Name
   - middle_name
   25:
+  - Date of Birth (mm/dd/yyyy)
   - dob
   26:
+  - Sex
   - male
   - female
   27:
+  - Country of Birth
   - country_of_birth
   28:
+  - City/Town/Village of Residence
   - city_town_village_of_residence
   29:
+  - Country of Residence
   - country_of_residence
   30a:
+  - Family Name (Last Name)
   - last_name
   30b:
+  - Given Name (First Name)
   - first_name
   30c:
+  - Middle Name
   - middle_name
   31:
+  - Date of Birth (mm/dd/yyyy)
   - dob
   32:
+  - Sex
   - male
   - female
   33:
+  - Country of Birth
   - country_of_birth
   34:
+  - City/Town/Village or Residence
   - city_town_village_of_residence
   35:
+  - Country of Residence
   - country_of_residence
   section_description_10:
   - Additional Information About You (Petitioner)
   36:
+  - Select if Citizen or Permanent Resident (Select only one box)
   - us_citizen
   - lawful_permanent_resident
   37:
+  - My citizenship was acquired through (Select only one box)
   - birth_in_the_us
   - naturalization
   - parents
   38:
+  - Have you obtained a Certificate of naturalization or a Certificate of Citizenship
   - yes
   - no
   39a:
+  - Certificate Number
   - certificate_number
   39b:
+  - Place of Issuance
   - place_of_issuance
   39c:
+  - Date of Issuance (mm/dd/yyyy)
   - date_of_issuance
   40a:
+  - Class of Admission
   - class_of_admission
   40b:
+  - Date of Admission (mm/dd/yyyy)
   - date_of_admission
   40c:
+  - City or Town
   - city_or_town
   40d:
+  - State
   - state
   41:
+  - Did you gain lawful permanent resident status through marriage to a U.S. citizen or lawful permanent resident?
   - yes
   - no
   section_description_11:
   - Employment History
   42:
+  - Name of Employer/Company
   - name_of_employer_company
   43a:
+  - Street Number and Name
   - street_number_and_name
   43b:
-  - apt
-  - ste
-  - floor
+  - Apartment
+  - Suite
+  - Floor
+  - Value
   43c:
+  - City or Town
   - city_or_town
   43d:
+  - State
   - state
   43e:
+  - ZIP Code
   - zipcode
   43f:
+  - Province
   - province
   43g:
+  - Postal Code
   - postalcode
   43h:
+  - Country
   - country
   44:
+  - Your Occupation
   - your_occupation
   45a:
+  - Date From (mm/dd/yyyy)
   - date_from
   45b:
+  - Date To (mm/dd/yyyy)
   - date_to
   46:
+  - Name of Employer/Company
   - name_of_employer_company
   47a:
+  - Street Number and Name
   - street_number_and_name
   47b:
-  - apt
-  - ste
-  - floor
+  - Apartment
+  - Suite
+  - Floor
+  - Value
   47c:
+  - City or Town
   - city_or_town
   47d:
+  - State
   - state
   47e:
+  - ZIP Code
   - zipcode
   47f:
+  - Province
   - province
   47g:
+  - Postal Code
   - postalcode
   47h:
+  - Country
   - country
   48:
+  - Your Occupation
   - your_occupation
   49a:
+  - Date From (mm/dd/yyyy)
   - date_from
   49b:
+  - Date To (mm/dd/yyyy)
   - date_to
 part_3:
   description:
   - Biographic Information
   1:
-  - ethnicity
+  - Ethnicity Select (Select only one box)
+  - Hispanic or Latino
+  - Not Hispanic or Latino
   2:
-  - race
+  - Race (Select all applicable boxes)
+  - White
+  - Asian
+  - Black or African American
+  - American Indian or Alaska Native
+  - Native Hawaiiwan or Other Pacific Islander
   3:
-  - height
+  - Height
+  - Feet
+  - Inches
   4:
-  - weight
+  - Weight
+  - Pounds
   5:
-  - eye_color
+  - Eye Color
+  - Black
+  - Blue
+  - Brown
+  - Gray
+  - Green
+  - Hazel
+  - Maroon
+  - Pink
+  - Unknown/Other
   6:
-  - hair_color
+  - Hair Color (Select only one box)
+  - Bald (No hair)
+  - Black
+  - Blond
+  - Brown
+  - Gray
+  - Red
+  - Sandy
+  - White
+  - Unknown/Other
 part_4:
   description:
   - Information About Beneficiary
   1:
+  - Alient Registration Number (A-Number) (if any)
   - alien_registration_number
   2:
+  - USCIS Online Account Number (if any)
   - uscis_account_number
   3:
+  - U.S. Social Security Number (if any)
   - ssn
   section_description_1:
   - Beneficiary's Full Name
   4a:
+  - Family Name (Last Name)
   - last_name
   4b:
+  - Given Name (First Name)
   - first_name
   4c:
+  - Middle Name
   - middle_name
   section_description_2:
   - Other Names Used (if any)
   5a:
+  - Family Name (Last Name)
   - last_name
   5b:
+  - Given Name (First Name)
   - first_name
   5c:
+  - Middle Name
   - middle_name
   section_description_3:
   - Other Information About Beneficiary
   6:
+  - City/Town/Village of Birth
   - city_town_village_of_birth
   7:
+  - Country of Birth
   - country_of_birth
   8:
+  - Date of Birth (mm/dd/yyyy)
   - dob_mm_dd_yyyy
   9:
+  - Sex
   - sex
   10:
-  - has_anyone_filed_a_petition_for_you
+  - Has anyone else ever filed a petition for the beneficiary?
+  - yes
+  - no
+  - Unknown
   section_description_4:
   - Beneficiary's Physical Address
   11a:
+  - Street Number and Name
   - street_number_and_name
   11b:
-  - apt
-  - ste
-  - floor
+  - Apartment
+  - Suite
+  - Floor
+  - Value
   11c:
+  - City or Town
   - city_or_town
   11d:
+  - State
   - state
   11e:
+  - ZIP Code
   - zipcode
   11f:
+  - Province
   - province
   11g:
+  - Postal Code
   - postalcode
   11h:
+  - Country
   - country
   section_description_5:
   - Other Address and Contact Information
   12a:
+  - Street Number and Name
   - street_number_and_name
   12b:
-  - apt
-  - ste
-  - floor
+  - Apartment
+  - Suite
+  - Floor
+  - Value
   12c:
+  - City or Town
   - city_or_town
   12d:
+  - State
   - state
   12e:
+  - ZIP Code
   - zipcode
   13a:
+  - Street Number and Name
   - street_number_and_name
   13b:
-  - apt
-  - ste
-  - floor
+  - Apartment
+  - Suite
+  - Floor
+  - Value
   13c:
+  - City or Town
   - city_or_town
   13d:
+  - Province
   - province
   13e:
+  - Postal Code
   - postalcode
   13f:
+  - Country
   - country
   14:
+  - Daytime Telephone Number (if any)
   - daytime_telephone_number
   15:
+  - Mobile Telephone Number (if any)
   - mobile_telephone_number
   16:
+  - Email Address (if any)
   - email_address
   section_description_6:
   - Beneficiary's Marital Information
   17:
+  - How many times has the beneficiary been married?
   - number_of_times_married
   18:
-  - marital_status
+  - Current Marital status
+  - Single, Never Married
+  - Married
+  - Divorced
+  - Widowed
+  - Separated
+  - Annulled
+  - Date of Current Marriage (if currently married) (mm/dd/yyyy)
   19:
+  - Date of Current Marriage (if currently married)
   - date_of_current_marriage
   section_description_7:
   - Place of Beneficiary's Current Marriage (if married)
@@ -524,9 +703,10 @@ part_4:
   51b:
   - street_number_and_name
   51c:
-  - apt
-  - ste
-  - floor
+  - Apartment
+  - Suite
+  - Floor
+  - Value
   51d:
   - city_or_town
   51e:
@@ -562,9 +742,10 @@ part_4:
   58a:
   - street_number_and_name
   58b:
-  - apt
-  - ste
-  - floor
+  - Apartment
+  - Suite
+  - Floor
+  - Value
   58c:
   - city_or_town
   58d:
@@ -576,9 +757,10 @@ part_4:
   59a:
   - street_number_and_name
   59b:
-  - apt
-  - ste
-  - floor
+  - Apartment
+  - Suite
+  - Floor
+  - Value
   59c:
   - city_or_town
   59d:
@@ -681,9 +863,10 @@ part_7:
   3a:
   - street_number_and_name
   3b:
-  - apt
-  - ste
-  - floor
+  - Apartment
+  - Suite
+  - Floor
+  - Value
   3c:
   - city_or_town
   3d:
@@ -730,9 +913,10 @@ part_8:
   3a:
   - street_number_and_name
   3b:
-  - apt
-  - ste
-  - floor
+  - Apartment
+  - Suite
+  - Floor
+  - Value
   3c:
   - city_or_town
   3d:
