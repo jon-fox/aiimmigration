@@ -1,40 +1,60 @@
 part_1:
+  description:
+  - Relationship (You are the Petitioner. Your relative is the Beneficiary)
   1:
+  - I am filing this petition for my (Select only one box)
   - Spouse
   - Parent
   - Brother/Sister
   - Child
   2:
+  - If you are filing this petition for your child or parent, select the box that describes your relationship (Select only one box)
   - child_married_parents
   - stepchild/stepparent
   - child_unmarried_parents
   - child_adopted
   3:
+  - If the beneficiary is your brother/sister, are you related by adoption?
   - yes
   - no
   4:
+  - Did you gain lawful permanent resident status or citizenship through adoption?
   - yes
   - no
 
 part_2:
+  part_description:
+  - Information About You (Petitioner)
   1:
+  - Alien Registration Number(A-Number)(if any)
   - alien_registration_number
   2:
+  - USCIS Online Account Number (if any)
   - uscis_account_number
   3:
+  - U.S. Social Security Number (if any)
   - ssn
+  section_description_1:
+  - Your Full Name
   4a:
+  - Family Name (Last Name)
   - last_name
   4b:
+  - Given Name (First Name)
   - first_name
   4c:
+  - Middle Name
   - middle_name
+  section_description_2:
+  - Other Names Used (if any)
   5a:
   - last_name
   5b:
   - first_name
   5c:
   - middle_name
+  section_description_3:
+  - Other Information
   6:
   - city_town_village_of_birth
   7:
@@ -43,6 +63,8 @@ part_2:
   - dob_mm_dd_yyyy
   9:
   - sex
+  section_description_4:
+  - Mailing Address
   10a:
   - in_care_of_name
   10b:
@@ -65,6 +87,8 @@ part_2:
   - country
   11:
   - mailing_and_physical_same
+  section_description_5:
+  - Address History
   12a:
   - street_number_and_name
   12b:
@@ -109,6 +133,8 @@ part_2:
   - date_from
   15b:
   - date_to
+  section_description_6:
+  - Your Marital Information
   16:
   - num_times_married
   17:
@@ -120,6 +146,8 @@ part_2:
   - Annulled
   18:
   - date_of_current_marriage
+  section_description_7:
+  - Place of Your Current Marriage (if married)
   19a:
   - city_or_town
   19b:
@@ -128,6 +156,8 @@ part_2:
   - province
   19d:
   - country
+  section_description_8:
+  - Names of All Your Spouses, Spouse 1 first, then all prior (if any)
   20a:
   - last_name
   20b:
@@ -144,6 +174,8 @@ part_2:
   - middle_name
   23:
   - date_marriage_ended
+  section_description_9:
+  - Information About Your Parents
   24a:
   - last_name
   24b:
@@ -178,6 +210,8 @@ part_2:
   - city_town_village_of_residence
   35:
   - country_of_residence
+  section_description_10:
+  - Additional Information About You (Petitioner)
   36:
   - us_citizen
   - lawful_permanent_resident
@@ -205,6 +239,8 @@ part_2:
   41:
   - yes
   - no
+  section_description_11:
+  - Employment History
   42:
   - name_of_employer_company
   43a:
@@ -258,6 +294,8 @@ part_2:
   49b:
   - date_to
 part_3:
+  description:
+  - Biographic Information
   1:
   - ethnicity
   2:
@@ -271,24 +309,32 @@ part_3:
   6:
   - hair_color
 part_4:
+  description:
+  - Information About Beneficiary
   1:
   - alien_registration_number
   2:
   - uscis_account_number
   3:
   - ssn
+  section_description_1:
+  - Beneficiary's Full Name
   4a:
   - last_name
   4b:
   - first_name
   4c:
   - middle_name
+  section_description_2:
+  - Other Names Used (if any)
   5a:
   - last_name
   5b:
   - first_name
   5c:
   - middle_name
+  section_description_3:
+  - Other Information About Beneficiary
   6:
   - city_town_village_of_birth
   7:
@@ -299,6 +345,8 @@ part_4:
   - sex
   10:
   - has_anyone_filed_a_petition_for_you
+  section_description_4:
+  - Beneficiary's Physical Address
   11a:
   - street_number_and_name
   11b:
@@ -317,6 +365,8 @@ part_4:
   - postalcode
   11h:
   - country
+  section_description_5:
+  - Other Address and Contact Information
   12a:
   - street_number_and_name
   12b:
@@ -349,12 +399,16 @@ part_4:
   - mobile_telephone_number
   16:
   - email_address
+  section_description_6:
+  - Beneficiary's Marital Information
   17:
   - number_of_times_married
   18:
   - marital_status
   19:
   - date_of_current_marriage
+  section_description_7:
+  - Place of Beneficiary's Current Marriage (if married)
   20a:
   - city_or_town
   20b:
@@ -363,6 +417,8 @@ part_4:
   - province
   20d:
   - country
+  section_description_8:
+  - Names of Beneficiary's Spouses (if any)
   21a:
   - last_name
   21b:
@@ -379,6 +435,8 @@ part_4:
   - middle_name
   24:
   - date_marriage_ended
+  section_description_9:
+  - Information About Beneficiary's Family
   25a:
   - last_name
   25b:
@@ -439,6 +497,8 @@ part_4:
   - dob
   44:
   - country_of_birth
+  section_description_10:
+  - Beneficiary's Entry Information
   45:
   - ever_in_the_united_states
   46a:
@@ -457,6 +517,8 @@ part_4:
   - country_of_passport_issuance
   50:
   - passport_or_travel_doc_expiration
+  section_description_11:
+  - Beneficiary's Employment Information
   51a:
   - current_employer
   51b:
@@ -479,6 +541,8 @@ part_4:
   - country
   52:
   - date_employment_began
+  section_description_12:
+  - Additional Information About Beneficiary
   53:
   - ever_in_immigration_proceedings
   54:
@@ -540,6 +604,8 @@ part_4:
   62c:
   - country
 part_5:
+  description:
+  - Other Information
   1:
   - previously_filed
   2a:
@@ -573,29 +639,45 @@ part_5:
   9:
   - relationship
 part_6:
+  description:
+  - Petitioners Statement, Contact Information, Declaration, and Signature
+  section_description_1:
+  - Petitioner's Statement
   1a:
   - understand_english
   1b:
   - language_if_not_english
   2:
   - preparer_in_part_8
+  section_description_3:
+  - Petitioner's Contact Information
   3:
   - petitioner_day_telephone
   4:
   - petitioner_mbile_telephone
   5:
   - petitioner_email_address
+  section_description_4:
+  - Petitioner's Declaration and Certification
+  section_description_5:
+  - Petitioner's Signature
   6a:
   - petitioner_sign_in_ink
   6b:
   - date_of_signature
 part_7:
+  description:
+  - Interpreter's Contact Information, Certification, and Signature
+  section_description_1:
+  - Intepreter's Full Name
   1a:
   - interpreter_last_name
   1b:
   - interpreter_first_name
   2:
   - interpreter_business_or_org_name
+  section_description_2:
+  - Interpreter's Mailing Address
   3a:
   - street_number_and_name
   3b:
@@ -612,12 +694,20 @@ part_7:
   - province
   3h:
   - country
+  section_description_3:
+  - Interpreter's Contact Information
   4:
   - interpreters_day_time_telephone
   5:
   - interpreters_mobile_telephone
   6:
   - interpreters_email_address
+  section_description_4:
+  - Interpreter's Certification
+  section_description_5:
+  - Interpreter's Certification
+  section_description_6:
+  - Interpreter's Signature
   7:
   - interpreter_second_language
   7a:
@@ -625,12 +715,18 @@ part_7:
   7b:
   - date_of_signature
 part_8:
+  description:
+  - Contact Information, Declaration, and Signature of the Person Preparing this Petition, if Other Than the Petitioner
+  section_description_1:
+  - Preparer's Full Name
   1a:
   - preparers_last_name
-  1a:
+  1b:
   - preparers_first_name
   2:
   - preparers_business_or_org_name
+  section_description_2:
+  - Preparer's Mailing Address
   3a:
   - street_number_and_name
   3b:
@@ -647,21 +743,31 @@ part_8:
   - province
   3h:
   - country
+  section_description_3:
+  - Preparer's Contact Information
   4:
   - preparers_day_time_telephone
   5:
   - preparers_mobile_telephone
   6:
   - preparers_email_address
+  section_description_4:
+  - Preparer's Statement
   7a:
   - preparer_not_an_attorney
   7b:
   - preparer_is_an_attorney
+  section_description_5:
+  - Preparer's Certification
+  section_description_6:
+  - Preparer's Signature
   8a:
   - preparers_signature
   8b:
   - date_of_signature
 part_9:
+  description:
+  - Additional Information
   1a:
   - last_name
   1b:
