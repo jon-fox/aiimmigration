@@ -4,7 +4,27 @@ from data_objects.person import setup_person
 from data_objects.person import Person
 import re
 import yaml
-import pprint
+from pprint import pprint
+
+
+def input_with_validation(prompt, type_=None, min_=None, max_=None, range_=None):
+    """Generic input function that includes validation."""
+    while True:
+        try:
+            value = input(prompt)
+            if type_ is not None:
+                value = type_(value)
+            if min_ is not None and value < min_:
+                raise ValueError(f"Value must be at least {min_}.")
+            if max_ is not None and value > max_:
+                raise ValueError(f"Value must be no more than {max_}.")
+            if range_ is not None and value not in range_:
+                raise ValueError(f"Value must be within {range_}.")
+            return value
+        except ValueError as ve:
+            print(ve)
+            continue
+
 
 def fill_pdf(file_path, person):
     special_case_like_barcode = []
@@ -21,15 +41,44 @@ def fill_pdf(file_path, person):
             widgets = page.widgets()
             for widget in widgets:
                 # print(widget.field_label)
-                field_name = widget.field_name.split('.')[-1].split('_')[-1][:-3]
+                
                 # print(field_name + " | " + widget.field_label + " | " + widget.field_value + " | eol")
-                # print(field_name + " | ")
                 # print(widget.field_name)
+                part_number = widget.field_name.split('.')[-1].split('_')[0].split('Line')[0].lower()
                 field_numeral = widget.field_name.split('.')[-1].split('_')[0].split('Line')[-1]
+                field_name = widget.field_name.split('.')[-1].split('_')[-1][:-3]
                 if re.search(r'\[.*\]', field_numeral):
                     special_case_like_barcode.append(field_numeral)
-                # print(field_numeral)
-                print(widget.field_name)
+                
+                # print(widget.field_name)
+                # print(f"Field Name: {field_name}")
+                # print(f"Field Numeral: {field_numeral}")
+                # print(f"Part Number: {part_number}")
+                if part_number in i_130:
+                    # print(f"INSIDE THE DICT!!")
+                    if field_numeral in i_130[part_number]:
+                        # print(f"INSIDE THE DICT!!")
+                        field = i_130[part_number][field_numeral][0]
+                        # print(field_name)
+                        # print(field)
+                        # print(widget.field_type_string)
+                        if widget.field_type_string.lower() == 'combobox':
+                            pprint(widget.choice_values)
+                            count = 0
+                            # widget.field_value = {'1B1': '1B1 - H-1B1 SPECIALITY OCCUPATION'}
+                            widget.field_value = "1B1 - H-1B1 SPECIALITY OCCUPATION"
+                            if count < 1:
+                                widget.field_value = 4
+                                count += 1
+                            else:
+                                widget.field_value = 'WY'
+
+                            widget.update()
+                        else:
+                            # field_value = input_with_validation(f"Enter {field}: ", type_=str)
+                            field_value = 'blah'
+                            widget.field_value = field_value
+                            widget.update()
 
                 # print(widget.field_label + " | ")
                 # closest_match = get_closest_method_name(person, field_name)

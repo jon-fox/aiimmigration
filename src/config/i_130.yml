@@ -1,4 +1,4 @@
-part_1:
+pt1:
   description:
   - Relationship (You are the Petitioner. Your relative is the Beneficiary)
   1:
@@ -22,7 +22,7 @@ part_1:
   - yes
   - no
 
-part_2:
+pt2:
   part_description:
   - Information About You (Petitioner)
   1:
@@ -397,7 +397,7 @@ part_2:
   49b:
   - Date To (mm/dd/yyyy)
   - date_to
-part_3:
+pt3:
   description:
   - Biographic Information
   1:
@@ -440,7 +440,7 @@ part_3:
   - Sandy
   - White
   - Unknown/Other
-part_4:
+pt4:
   description:
   - Information About Beneficiary
   1:
@@ -876,7 +876,7 @@ part_4:
   62c:
   - Country
   - country
-part_5:
+pt5:
   description:
   - Other Information
   1:
@@ -928,7 +928,7 @@ part_5:
   9:
   - Relationship
   - relationship
-part_6:
+pt6:
   description:
   - Petitioners Statement, Contact Information, Declaration, and Signature
   section_description_1:
@@ -963,7 +963,7 @@ part_6:
   6b:
   - Date of Signature (mm/dd/yyyy)
   - date_of_signature
-part_7:
+pt7:
   description:
   - Interpreter's Contact Information, Certification, and Signature
   section_description_1:
@@ -1027,7 +1027,7 @@ part_7:
   7b:
   - Date of Signature (mm/dd/yyyy)
   - date_of_signature
-part_8:
+pt8:
   description:
   - Contact Information, Declaration, and Signature of the Person Preparing this Petition, if Other Than the Petitioner
   section_description_1:
@@ -1095,7 +1095,7 @@ part_8:
   8b:
   - Date of Signature (mm/dd/yyyy)
   - date_of_signature
-part_9:
+pt9:
   description:
   - Additional Information
   1a:
