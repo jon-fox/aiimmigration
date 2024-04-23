@@ -66,14 +66,31 @@ def fill_pdf(file_path, person):
                             pprint(widget.choice_values)
                             count = 0
                             # widget.field_value = {'1B1': '1B1 - H-1B1 SPECIALITY OCCUPATION'}
-                            widget.field_value = "1B1 - H-1B1 SPECIALITY OCCUPATION"
-                            if count < 1:
-                                widget.field_value = 4
-                                count += 1
-                            else:
-                                widget.field_value = 'WY'
+                            # widget.field_value = "1B1 - H-1B1 SPECIALITY OCCUPATION"
+                            print("Please select a value:")
+                            for i, value in enumerate(widget.choice_values, 1):
+                                print(f"{i}. {value}")
 
-                            widget.update()
+                            # Get the user's selection
+                            selection = int(input("Enter the number of your selection: ")) - 1
+
+                            # Check if the selection is valid
+                            if 0 <= selection < len(widget.choice_values):
+                                selected_value = widget.choice_values[selection]
+                                print(f"You selected: {selected_value}")
+                                widget.choice_values = (selected_value)
+                                widget.update()
+                            else:
+                                print("Invalid selection")
+                            # if count < 1:
+                            #     # widget.field_value = 4
+                            #     widget.choice_values = (('1B1', '1B1 - H-1B1 SPECIALITY OCCUPATION'))
+                            #     count += 1
+                            #     widget.update()
+                            # else:
+                            #     # widget.field_value = 'WY'
+                            #     widget.choice_values = (('WY', 'WY'))
+                            #     widget.update()
                         else:
                             # field_value = input_with_validation(f"Enter {field}: ", type_=str)
                             field_value = 'blah'
