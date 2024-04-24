@@ -78,7 +78,14 @@ def fill_pdf(file_path, person):
                             if 0 <= selection < len(widget.choice_values):
                                 selected_value = widget.choice_values[selection]
                                 print(f"You selected: {selected_value}")
-                                widget.choice_values = (selected_value)
+                                print(f"Field label: {widget.field_label}")
+                                if 'Select State' in widget.field_label:
+                                    widget.field_value = selected_value[0]
+                                else:
+                                    widget.choice_values = (selected_value)
+                                widget.update()
+                                import time
+                                time.sleep(5)
                                 widget.update()
                             else:
                                 print("Invalid selection")
