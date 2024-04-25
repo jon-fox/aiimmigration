@@ -7,3 +7,6 @@ PyMuPDF
 thefuzz
 PyYAML
 streamlit
+pypdf
+langchain_openai
+faiss-cpu

@@ -2,6 +2,9 @@ from openai import OpenAI
 from openai import AssistantEventHandler
 from typing_extensions import override
 from model.conversation_storage import store_conversation
+from langchain_community.document_loaders import PyPDFLoader
+from langchain_community.vectorstores import FAISS
+from langchain_openai import OpenAIEmbeddings
 
 
 client = OpenAI()
@@ -64,6 +67,15 @@ class EventHandler(AssistantEventHandler):
       return self.accumulated_output
  
 
+def load_pdf():
+  loader = PyPDFLoader("../documents/i-130.pdf")
+  pages = loader.load_and_split()
+
+  faiss_index = FAISS.from_documents(pages, OpenAIEmbeddings())
+  docs = faiss_index.similarity_search("How do i fill this form out?", k=2)
+  for doc in docs:
+      print(str(doc.metadata["page"]) + ":", doc.page_content[:2000])
+
 # Then, we use the `create_and_stream` SDK helper 
 # with the `EventHandler` class to create the Run 
 # and stream the response.
@@ -85,3 +97,8 @@ def gpt_call(name, question):
   full_output = handle_event.get_accumulated_output()
   store_conversation(question, full_output)
   print(full_output)  # or return full_output for further processing
+
+
+if __name__ == "__main__":
+  # gpt_call("Riley", "I dont know where to start")
+  load_pdf()

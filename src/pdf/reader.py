@@ -84,8 +84,8 @@ def fill_pdf(file_path, person):
                                 else:
                                     widget.choice_values = (selected_value)
                                 widget.update()
-                                import time
-                                time.sleep(5)
+                                # import time
+                                # time.sleep(5)
                                 widget.update()
                             else:
                                 print("Invalid selection")
